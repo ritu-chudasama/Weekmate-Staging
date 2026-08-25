@@ -1,0 +1,91 @@
+# WordPress core (uncomment if you don't want to track WP core files)
+# wp-admin/
+# wp-includes/
+# wp-*.php
+# xmlrpc.php
+# wp-content/index.php
+
+# Config
+wp-config.php
+
+# Uploads
+wp-content/uploads/
+
+# Cache
+wp-content/cache/
+wp-content/wp-rocket-config/
+
+# Backups
+wp-content/backup-db/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/aiowps_backups/
+wp-content/drop-ins/
+wp-content/litespeed/
+wp-content/upgrade-temp-backup/
+wp-content/uploads-webpc/
+wp-content/advanced-cache.php
+wp-content/mysql.sql
+wp-content/object-cache.php
+
+# Third-party plugins/themes (if managed via Composer, keep these ignored)
+# wp-content/plugins/
+# wp-content/themes/
+wp-content/plugins/easy-wp-smtp/
+wp-content/plugins/email-log/
+wp-content/plugins/akismet/
+wp-content/plugins/all-in-one-wp-security-and-firewall/
+wp-content/plugins/contact-form-cfdb7/
+wp-content/plugins/download-plugin/
+wp-content/plugins/duplicate-page/
+wp-content/plugins/genesis-blocks/
+wp-content/plugins/redirection/
+wp-content/plugins/safe-svg/
+wp-content/plugins/webp-converter-for-media/
+wp-content/plugins/wordpress-importer/
+wp-content/themes/twentytwentythree
+wp-content/themes/twentytwentyfive
+wp-content/themes/genesis-block-theme
+wp-content/themes/twentytwentyfour
+wp-content/themes/index.php
+
+
+
+# Debug logs
+wp-content/debug.log
+*.log
+
+# Environment / secrets
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node / build tools
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Composer
+vendor/
+composer.lock
+
+# SQL dumps
+*.sql
+*.sql.gz
+
+# Misc
+*.zip
+*.tar.gzwp-content/==cache/
+wp-content/uploads.zip
