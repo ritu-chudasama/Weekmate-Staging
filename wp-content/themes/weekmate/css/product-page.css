@@ -1,0 +1,2818 @@
+/* product banner section */
+section.product-banner-section.sectionCvr {
+    padding: 2em 0px 6em;
+}
+
+.product-banner-section .product-badges {
+    margin-bottom: 1.3rem;
+}
+
+.product-banner-section .banner-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner-conetnt .banner-subtitle {
+    max-width: 390px;
+}
+
+/* setup-process section */
+.small-section-header {
+    max-width: 1035px;
+    margin: 0 auto;
+}
+
+.setup-process .setup-process-title {
+    margin-bottom: 1rem;
+}
+
+.setup-process .rich-text {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.setup-process .process-item .process-item-inner {
+    padding: 2rem 2rem 1.5rem;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.setup-process .process-item h3 {
+    margin-bottom: 1.4rem;
+}
+
+.setup-process .process-item .rte {
+    margin-bottom: 1.8rem;
+    flex: 1;
+}
+
+.setup-process .process-item:first-child .process-item-inner {
+    background: #E9F2FC;
+}
+
+.setup-process .process-item:nth-child(2) .process-item-inner {
+    background: #FCFBE9;
+}
+
+.setup-process .process-item:nth-child(3) .process-item-inner {
+    background: #E9FAF4;
+}
+
+/* features section */
+
+.small-rich-text {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.features-section .small-section-header .features-section-title {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+}
+
+.features-logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    row-gap: 24px;
+}
+
+.features-logo-wrapper .feature-item {
+    max-width: 12.5%;
+    width: 100%;
+    padding: 0 12px;
+    ;
+}
+
+.features-logo-wrapper .feature-item p {
+    line-height: 1.3;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.features-logo-wrapper .feature-item .feature-item-inner {
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.features-logo-wrapper .feature-item p {
+    margin-bottom: 0;
+}
+
+/* why to choose accordion section */
+.why-to-choose-accordion-sec {
+    background: #F6F6F6;
+}
+
+.why-to-choose-accordion-sec .accordion-selector {
+    border-radius: 50px;
+    background: #ffffff;
+    padding: 40px 35px;
+    height: 100%;
+}
+
+.why-to-choose-accordion-sec .accordion-body {
+    padding: 55px 80px;
+    padding: 20px 30px 20px;
+    border-radius: 30px;
+    background: #ffffff;
+    height: 100%;
+
+}
+
+.why-to-choose-accordion-sec .accordion-selector .accordion-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    padding: 10px 12px;
+    cursor: pointer;
+    gap: 1rem;
+    transition: all 0.4s ease-in;
+}
+
+.why-to-choose-accordion-sec .accordion-item .icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.why-to-choose-accordion-sec .accordion-item .icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.why-to-choose-accordion-sec .accordion-item .accordion-header {
+    flex: 1;
+    font-size: 16px;
+}
+
+.why-to-choose-accordion-sec .accordion-item.active .accordion-header {
+    color: #fff;
+}
+
+.why-to-choose-accordion-sec .accordion-item.active .icon {
+    animation: myAnim 4s ease-in-out infinite;
+}
+
+.why-to-choose-accordion-sec .accordion-selector .accordion-item.active {
+    background: #005282;
+}
+
+.why-to-choose-accordion-sec .accordion-selector .accordion-item:not(.active) svg path {
+    fill: #8D8D8D;
+}
+
+.why-to-choose-accordion-sec .accordion-body h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.why-to-choose-accordion-sec .accordion-body .rich-text{
+    margin-bottom: 15px;
+}
+
+/* collaboration-tool-section */
+.collaboration-tool-section-sec .small-section-header {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.collaboration-tool-selector .tool-item {
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+}
+
+.collaboration-tool-selector .tool-item .tool-header {
+    font-size: 1.375rem;
+    margin-bottom: 0;
+    color: #8D8D8D;
+}
+
+.collaboration-tool-selector .tool-item.active .tool-header {
+    color: #005282;
+}
+
+.collaboration-tool-selector {
+    position: relative;
+}
+
+.collaboration-tool-selector::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    border-left: 4px solid #D9D9D9;
+}
+
+.collaboration-tool-selector .tool-item {
+    margin-bottom: 1.25rem;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    position: relative;
+    z-index: 1;
+    padding-top: 0.5rem;
+    transition: all 0.5s ease;
+    padding-bottom: 0.5rem;
+}
+
+.collaboration-tool-section-scroll .tool-item.active {
+    border-left: 4px solid #005282;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content {
+    border-radius: 30px;
+    padding: 58px 54px;
+    margin-bottom: 1rem;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-header {
+    font-size: 1.625rem;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content:first-child {
+    background: #E9FAF4;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content:nth-child(2) {
+    background: #FCFBE9;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content:nth-child(3) {
+    background: #FCF2E9;
+}
+
+.collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content:nth-child(4) {
+    background: #EBE8F9;
+}
+
+/* setup-process section */
+.setup-process-section {
+    background: #F6F6F6;
+}
+
+.setup-process-section .process-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 34px;
+    height: 100%;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+}
+
+.setup-process-section .process-item:hover {
+    border: 1px solid #CECECE;
+}
+
+.setup-process-section .process-item .process-image {
+    margin-bottom: 2rem;
+}
+
+.setup-process-section .process-item .setup-conetnt-process-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.setup-process-section .process-item p:last-child {
+    margin-bottom: 0;
+}
+
+.setup-process-section .process-item .setup-conetnt-process-title>span {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+
+.pdp-ourvalues.ourvalues-sec .ourvalues-wrapper .ourvalues-column-wrapper::before{
+    display: none;
+}
+
+
+
+
+/* Css for Mira Ai Video */
+
+.mira-ai-section {
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.mira-ai-content h2 {
+    color: #383838;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.mira-ai-content p {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    max-width: 520px;
+}
+
+/* BUTTON (ACF BUTTON SUPPORT) */
+.mira-ai-content .theme-btn {
+    margin-top: 24px;
+    border-radius: 160px;
+    padding: 14px 20px;
+    background-color: #005282;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.mira-ai-content .theme-btn:hover {
+    background-color: #00bdf2;
+    color: #fff;
+    border: none;
+}
+
+/* RIGHT VIDEO BOX */
+.mira-ai-video {
+    border-radius: 20px;
+    padding: 0;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EMBED / VIDEO */
+.mira-ai-video iframe,
+.mira-ai-video video {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    border-radius: 20px;
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .mira-ai-section {
+        padding: 70px 0;
+        flex-direction: row-reverse;
+    }
+    .mira-ai-section .container .row.align-items-center{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .mira-ai-content h2 {
+        font-size: 36px;
+    }
+
+    .mira-ai-video {
+        margin-top: 40px;
+    }
+    
+    .mira-ai-content p{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .mira-ai-content h2 {
+        font-size: 30px;
+    }
+
+    .mira-ai-content p {
+        font-size: 16px;
+    }
+
+    .mira-ai-video iframe,
+    .mira-ai-video video {
+        min-height: 240px;
+    }
+}
+
+/* responsive */
+@media (max-width:1440px) {
+    .features-logo-wrapper .feature-item .feature-item-inner {
+        padding: 15px 10px;
+    }
+    .pdp-ourvalues.ourvalues-sec .ourvalues-wrapper .ourvalues-column-wrapper .ourvalues-column{
+        padding: 3rem;
+    }
+    .features-logo-wrapper .feature-item{
+        max-width: 16.66%;
+    }
+}
+
+@media (max-width:1199px) {
+    .product-banner-section .banner-conetnt {
+        margin-bottom: 1.25rem;
+    }
+
+    .setup-process .process-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .features-logo-wrapper .feature-item {
+        max-width: 20%;
+    }
+
+    .why-to-choose-accordion-sec .accordion-selector {
+        margin-bottom: 1.5rem;
+    }
+
+    .collaboration-tool-selector .tool-item .tool-header {
+        font-size: 1.25rem;
+    }
+
+    .collaboration-tool-top-header {
+        margin-bottom: 2rem;
+    }
+
+    .collaboration-tool-section-scroll .collaboration-tool-header {
+        font-size: 1.375rem;
+    }
+
+    .setup-process-section .setup-process-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .setup-process-section .setup-process-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:1024px) {
+    section.product-banner-section.sectionCvr {
+        padding: 2em 0px 4em;
+    }
+    .features-logo-wrapper .feature-item {
+        max-width: 25%;
+    }
+
+}
+
+@media (max-width:991px) {
+    .product-banner-section .product-badges img {
+        max-width: 100px;
+    }
+
+    .faq-section .faqs-accordion .accordion-body {
+        font-size: 14px;
+    }
+     .pdp-ourvalues.ourvalues-sec .ourvalues-wrapper .ourvalues-column-wrapper .ourvalues-column{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:767px) {
+    .features-logo-wrapper .feature-item {
+        max-width: 50%;
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .why-to-choose-accordion-sec .accordion-selector {
+        padding: 20px 10px;
+    }
+
+    .why-to-choose-accordion-sec .accordion-item .accordion-header {
+        font-size: 1rem;
+    }
+
+    .why-to-choose-accordion-sec .accordion-selector .accordion-item {
+        padding: 10px 10px;
+    }
+
+    .why-to-choose-accordion-sec .accordion-body {
+        padding: 20px;
+    }
+    .why-to-choose-accordion-sec .accordion-selector{
+        height: inherit;
+    }
+    .collaboration-tool-section-scroll .collaboration-tool-body .tool-item-content {
+        padding: 2rem;
+    }
+
+    .setup-process-section .process-item .process-image {
+        margin-bottom: 2rem;
+    }
+
+    .setup-process-section .process-item .process-image img {
+        max-width: 70px;
+    }
+
+    .product-info-wrapper .product-info-block.product-count-block .collage-img img {
+        width: 60px;
+    }
+
+    .features-logo-wrapper .feature-item p {
+        font-size: 16px;
+    }
+    .faq-section .block-cta{
+        display: none;
+    }
+    .faq-section .faq-qa-wrapper {
+    margin-top: 1em;
+    }
+}
+
+@media (max-width:420px) {
+    section.product-banner-section.sectionCvr {
+        padding: 1.5em 0px 2em;
+    }
+      .pdp-ourvalues.ourvalues-sec .ourvalues-wrapper .ourvalues-column-wrapper .ourvalues-column{
+        padding: 1.5rem;
+    }
+}
+
+/* animation  */
+@keyframes myAnim {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* New Sections css */
+/* ── ecrm-grid-features BEM Block ───────────────────────── */
+.ecrm-grid-features {
+    padding: 100px 0;
+}
+
+.ecrm-grid-features__header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.ecrm-grid-features__title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #383838;
+    margin-bottom: 15px;
+    font-family: 'Manrope';
+}
+
+.ecrm-grid-features__subtitle {
+    font-size: 18px;
+    color: #4A4A4A;
+    max-width: 877px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Manrope';
+}
+
+.ecrm-grid-features__item {
+    padding: 30px 20px;
+    position: relative;
+}
+
+.ecrm-grid-features__item:not(:nth-child(3n)):not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 95px;
+    width: 1px;
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 991px) {
+    .ecrm-grid-features__item::after {
+        display: none;
+    }
+}
+
+.ecrm-grid-features__inner {
+    max-width: 355px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ecrm-grid-features__icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.ecrm-grid-features__item-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #383838;
+    margin-bottom: 10px;
+    font-family: 'Manrope';
+}
+
+.ecrm-grid-features__desc {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Manrope';
+}
+
+/* Css for Cta */
+.cta-banner-section {
+    padding: 0;
+    background-color: #0a3d6b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: visible;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto 70px;
+}
+.cta-banner-section .container {
+    position: relative;
+    z-index: 1;
+}
+.cta-banner-section .cta-left-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    padding-left: 78px;
+}
+.cta-banner-section .cta-left-image img {
+    max-height: 393px;
+    width: auto;
+    object-fit: contain;
+    margin-top: -50px;
+}
+.cta-banner-section .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.cta-banner-section .cta-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1.3;
+}
+.cta-banner-section .cta-checklist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cta-banner-section .cta-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cta-banner-section .cta-checklist li .check-icon svg {
+    width: 22px;
+    height: 22px;
+}
+.cta-banner-section .cta-btn-wrap .btn {
+    background: #00BDF2;
+    border: none;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 160px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    line-height: 1.3;
+    margin-right: 20px;
+}
+.cta-banner-section .cta-btn-wrap .btn:hover {
+    background: #fff;
+    color: #00BDF2;
+}
+
+.cta-banner-section-container{
+    display: flex;
+    gap: 20px;
+}
+
+.cta-banner-section-container-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cta-banner-section-container-content {
+    flex: 1;
+    display: flex;
+    margin-left: 35px;
+}
+
+/* ── cft BEM Block ──────────────────────────────────────── */
+.cft {
+    padding: 80px 0;
+    background-color: #eef3fb;
+    overflow: hidden;
+}
+
+.cft__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cft__title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a1a2e;
+    max-width: 822px;
+    margin: 0 auto 15px;
+}
+
+.cft__subtitle {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ── Tree ───────────────────────────────────────────────── */
+.cft__tree-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cft__center-btn {
+    display: inline-block;
+    background-color: #005282;
+    color: #fff;
+    padding: 18px 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    min-width: 220px;
+    box-shadow: 0px 25px 61.2px 0px #0091E633;
+}
+
+/* vertical line from button to horizontal bar */
+.cft__stem {
+    width: 1px;
+    height: 70px;
+    background-color: #005282;
+}
+
+/* horizontal bar — spans full viewport */
+.cft__branch-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.cft__branch-row-inner {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* each branch item */
+.cft__branch {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cft__branch {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    min-height: 100%;
+}
+
+.cft__branch .cft__card {
+    margin: 0 8px;
+    width: calc(100% - 16px);
+    height: 100%;
+}
+
+/* top border — forms the horizontal line */
+.cft__branch-top {
+    width: 100%;
+    height: 2px;
+    background-color: #005282;
+    position: relative;
+}
+
+.cft__branch:first-child .cft__branch-top {
+    background: linear-gradient(to right, transparent 50%, #005282 50%);
+}
+.cft__branch:last-child .cft__branch-top {
+    background: linear-gradient(to right, #005282 50%, transparent 50%);
+}
+.cft__branch-top {
+    margin: 0 -7px; /* compensates for the gap so line stays connected */
+}
+
+/* vertical drop line */
+.cft__branch-stem {
+    width: 1px;
+    height: 60px;
+    background-color: #005282;
+}
+
+/* card */
+.cft__card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 15px;
+    width: calc(100% - 16px); 
+    text-align: left;
+}
+
+.cft__card-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.cft__card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.cft__card-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.industry-use-cases-sec {
+    padding: 60px 0;
+}
+.industry-use-cases-sec .section-header {
+    margin-bottom: 20px;
+}
+.industry-use-cases-sec .section-header h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #383838;
+    font-family: 'Manrope';
+}
+.industry-use-cases-sec .use-case-tabs-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    background: #F9F9F9;
+    border-radius: 50px;
+    padding: 6px;
+    margin:0 auto 40px;
+    width: fit-content;
+    border: 1px solid #D4D4D4;
+}
+.industry-use-cases-sec .use-case-tab-btn {
+    background: transparent;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: 'Manrope';
+}
+.industry-use-cases-sec .use-case-tab-btn.active {
+    background: #005282;
+    color: #fff;
+}
+.industry-use-cases-sec .use-case-tab-content {
+    display: none;
+}
+.industry-use-cases-sec .use-case-tab-content.active {
+    display: block;
+}
+.industry-use-cases-sec .tab-description {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: 'Manrope';
+}
+.industry-use-cases-sec .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.industry-use-cases-sec .bullet-list li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+    align-items: flex-start;
+}
+.industry-use-cases-sec .bullet-list li .bullet-icon {
+    width: 22px;
+    height: 22px;
+    background: #005282;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.industry-use-cases-sec .bullet-list li .bullet-icon svg {
+    width: 12px;
+    height: 12px;
+}
+.industry-use-cases-sec .bullet-list li .bullet-text strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #383838;
+    margin-bottom: 3px;
+}
+.industry-use-cases-sec .bullet-list li .bullet-text span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #383838;
+}
+.industry-use-cases-sec .tab-image-wrapper {
+    background: #eef3fb;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-use-cases-sec .tab-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.industry-use-cases-sec .use-case-dropdown {
+    display: none;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid #D4D4D4;
+    font-size: 16px;
+    font-family: 'Manrope';
+    color: #1A1A1A;
+    background: #F9F9F9;
+    margin-bottom: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4L6 8L10 4' stroke='%23333' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+.use-case-custom-dropdown {
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.use-case-dropdown-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid #D4D4D4;
+    font-size: 16px;
+    font-family: 'Manrope';
+    color: #1A1A1A;
+    background: #F9F9F9;
+    cursor: pointer;
+}
+.use-case-dropdown-selected svg {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+.use-case-custom-dropdown.open .use-case-dropdown-selected svg {
+    transform: rotate(180deg);
+}
+.use-case-dropdown-list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #D4D4D4;
+    border-radius: 16px;
+    z-index: 100;
+    padding: 6px;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.use-case-custom-dropdown.open .use-case-dropdown-list {
+    display: block;
+}
+.use-case-dropdown-item {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-family: 'Manrope';
+    color: #1A1A1A;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.use-case-dropdown-item:hover {
+    background: #eef3fb;
+}
+.use-case-dropdown-item.active {
+    background: #005282;
+    color: #fff;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+
+@media (min-width: 992px) {
+    .cft__cards-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .ecrm-grid-features__item::after {
+        display: none;
+    }
+    .ecrm-grid-features__item {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 25px 15px;
+    }
+    .ecrm-grid-features__item:last-child {
+        border-bottom: none;
+    }
+    .ecrm-grid-features__title {
+        font-size: 28px;
+    }
+    .ecrm-grid-features__inner{
+        margin: 0;
+    }
+    .cta-banner-section .cta-left-image {
+        display: none;
+    }
+    .cta-banner-section .cta-content h2 {
+        font-size: 22px;
+    }
+    .cta-banner-section .cta-content{
+        padding: 50px;
+    }
+    .cta-banner-section .cta-checklist{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cta-banner-section-container-content{
+        margin: 0;
+    }
+    .cta-banner-section-container{
+        gap: 0;
+    }
+
+    .cft__tree-wrapper {
+        display: none;
+    }
+    .cft__cards-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    .cft__cards-mobile .cft__card {
+        width: calc(50% - 10px);
+    }
+    .cft__title {
+        font-size: 26px;
+    }
+    .use-case-tabs-wrapper { display: none !important; }
+    .use-case-custom-dropdown { display: block; }
+
+    .industry-use-cases-sec .use-case-tabs-wrapper {
+        display: none;
+    }
+    .industry-use-cases-sec .use-case-dropdown {
+        display: block;
+    }
+
+    .cta-banner-section .cta-btn-wrap .btn{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .ecrm-grid-features__header{
+        text-align: start;
+    }
+
+    .ecrm-grid-features{
+        padding: 30px 0;
+    }
+    
+    .industry-use-cases-sec .tab-image-wrapper {
+        margin-top: 30px;
+        min-height: 200px;
+    }
+    .industry-use-cases-sec .use-case-tabs-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 375px){
+    .cta-banner-section .cta-btn-wrap .btn {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+/* =============================================
+   Smarter Workflow Section
+   ============================================= */
+
+.smarter-workflow-sec {
+    background: #fff;
+    padding: 5rem 0 0 0;
+}
+
+/* Section Header */
+.smarter-workflow-sec .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.smarter-workflow-sec .section-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+/* Workflow Items Row */
+.smarter-workflow-sec .workflow-items {
+    row-gap: 32px;
+}
+
+/* Individual Workflow Card */
+.smarter-workflow-sec .workflow-item {
+    background: #F3F9FF;
+    border: 1px solid #D1E6FB;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image */
+.smarter-workflow-sec .workflow-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.smarter-workflow-sec .workflow-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Content */
+.smarter-workflow-sec .workflow-title {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 1%;
+    color: #383838;
+    padding: 20px 34px 0 34px;
+}
+
+.smarter-workflow-sec .rich-text {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #4A4A4A;
+    padding: 0 34px 20px 34px;
+}
+
+.smarter-workflow-sec .rich-text p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.smarter-workflow-sec .workflow {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.setup-process-item{
+    margin-top: 20px;
+}
+
+/*  new mcp banner css */
+.mcp-banner-section{
+    background-size: 100% 100%;
+    background-position: 100%;
+    padding: 8em 0px 0;
+    position: relative;
+    margin: 0 0 80px;
+}
+.mcp-banner-section .banner-title,
+.mcp-banner-section .banner-subtitle{
+    color: #fff;
+    
+}
+.mcp-banner-section .banner-content{
+    text-align: center;
+}
+.mcp-banner-section .banner-social-icons .social-icon{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(1){
+    bottom: 10%;
+    left: 8%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(2){
+     bottom: 29%;
+    left: 21.5%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(3){
+    bottom: 40%;
+    left: 9%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(4){
+    bottom: 56%;
+    left: 18%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(5){
+    bottom: 56%;
+    right: 18%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(6){
+    bottom: 40%;
+    right: 9%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(7){
+    bottom: 29%;
+    right: 21.5%;
+}
+.mcp-banner-section .banner-social-icons .social-icon:nth-child(8){
+    bottom: 10%;
+    right: 8%;
+}
+.mcp-banner-section .theme-btn {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.mcp-banner-section .theme-btn:hover{
+    background: #00bdf2;
+    color: #fff;
+    border: 1px solid #00bdf2;
+}
+.mcp-banner-section .banner-social-title {
+    position: absolute;
+    right: 15%;
+    bottom: 12px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 120px;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1;
+}
+.mcp-banner-section .banner-social-title:before {
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #fff;
+    content: "";
+    border-radius: 100%;
+}
+
+
+/* =============================================
+   Responsive
+   ============================================= */
+
+/* Large Desktops — 2 columns default (col-lg-6) */
+@media (max-width: 1199px) {
+    .smarter-workflow-sec {
+        padding: 70px 0;
+    }
+
+    .smarter-workflow-sec .section-header h2 {
+        font-size: 36px;
+    }
+
+    .mcp-banner-section .banner-social-icons .social-icon{
+        width: 45px;
+        height: 45px;
+    }
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(3) {
+        bottom: 34%;
+        left: 8%;
+    }
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(6) {
+        bottom: 34%;
+        right: 8%;
+    }
+
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(4) {
+        bottom: 48%;
+    }
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(5) {
+        bottom: 48%;
+    }
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(7) {
+
+        right: 17.5%;
+    }
+
+    .mcp-banner-section .banner-social-icons .social-icon:nth-child(2) {
+ 
+            left: 17.5%;
+    }
+}
+
+/* Tablets Landscape */
+@media (max-width: 991px) {
+    .smarter-workflow-sec {
+        padding: 60px 0;
+    }
+
+    .smarter-workflow-sec .section-header h2 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    .smarter-workflow-sec .section-header {
+        margin-bottom: 36px;
+    }
+
+    .mcp-banner-section .banner-social-icons{
+        margin: 15px 0 25px;
+        text-align: center;
+    }
+    .mcp-banner-section .banner-social-icons .social-icon{
+        position: static;
+    }
+    .mcp-banner-section .banner-social-title:before {
+        display: none;
+    }
+    .mcp-banner-section  .banner-social-title {
+        position: static;
+        background: transparent;
+        border:0;
+        border-radius: 0;
+        padding: 10px 20px;
+        color: #fff;
+        display: block;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 1;
+    }
+    .mcp-banner-section{
+            padding: 4em 0px 0;
+    }
+}
+
+/* Tablets Portrait — stack to 1 column */
+@media (max-width: 767px) {
+    .smarter-workflow-sec {
+        padding: 50px 0;
+    }
+
+    .mcp-banner-section .banner-social-icons .social-icon{
+        width: 36px;
+        height: 36px;
+    }
+    .mcp-banner-section .banner-social-title{
+        padding-bottom: 0;
+    }
+    .mcp-banner-section{
+            padding: 3em 0px 0;
+    }
+
+    .smarter-workflow-sec .section-header h2 {
+        font-size: 28px;
+    }
+
+    .smarter-workflow-sec .workflow-title {
+        font-size: 16px;
+        margin: 16px 16px 8px;
+    }
+
+    .smarter-workflow-sec .rich-text {
+        padding: 0 16px 20px;
+    }
+    .smarter-workflow-sec .workflow-items {
+        flex-direction: column;
+    }
+
+    .smarter-workflow-sec .workflow-items > [class*="col-"] {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .smarter-workflow-sec {
+        padding: 40px 0;
+    }
+
+    .smarter-workflow-sec .section-header h2 {
+        font-size: 24px;
+    }
+
+    .smarter-workflow-sec .section-header {
+        margin-bottom: 28px;
+    }
+
+    .smarter-workflow-sec .workflow-items {
+        row-gap: 20px;
+    }
+}
+
+
+/* Smart Hiring Process Section CSS 20/08/26 */
+
+
+.smart-hiring-process {
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    --navy-1:#0b3a5c;
+    --navy-2:#0a2f4d;
+    --cyan:#2fb0ea;
+    --cyan-soft:#7fd4f5;
+    --white:#ffffff;
+    --card-radius:26px;
+    --outer-radius:36px;
+    --gray-100:#eef1f5;
+    --gray-200:#e2e6ec;
+    --gray-500:#8a94a3;
+    --ink:#0f2436;
+    --green:#22c55e;
+}
+
+/* .smart-hiring-process {
+    padding-bottom: 80px;
+} */
+
+.smart-hiring-process .stage {
+    width: 100%;
+    max-width: 1560px;
+}
+
+/* ---------- outer glowing border wrap ---------- */
+.smart-hiring-process .wrap {
+    --angle: 0deg;
+    /* padding:2px; */
+    border-radius: var(--outer-radius);
+    background: conic-gradient(from var(--angle),
+            transparent 0deg,
+            transparent 300deg,
+            rgba(127, 212, 245, 0.0) 320deg,
+            rgba(127, 212, 245, 0.9) 340deg,
+            rgba(255, 255, 255, 1) 350deg,
+            rgba(127, 212, 245, 0.9) 358deg,
+            transparent 360deg);
+    animation: smart-hiring-process-spin-angle 7s linear infinite;
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes smart-hiring-process-spin-angle {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.smart-hiring-process .hero {
+    position: relative;
+    border-radius: calc(var(--outer-radius) - 2px);
+    background: linear-gradient(160deg, var(--navy-1), var(--navy-2) 80%);
+    padding: 48px 56px 40px;
+    overflow: hidden;
+}
+
+/* ---------- background video wrap ---------- */
+.smart-hiring-process .smart-hiring-process-wrap {
+    position: relative;
+    border-radius: var(--outer-radius);
+    overflow: hidden;
+}
+
+.smart-hiring-process .shp-bg-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: var(--outer-radius);
+}
+
+/* ---------- header ---------- */
+.smart-hiring-process .top-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.smart-hiring-process .headline h1 {
+    color: var(--white);
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.smart-hiring-process .headline p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    margin: 14px 0 0;
+    font-weight: 400;
+}
+
+.smart-hiring-process .cta {
+    position: absolute;
+    right: 130px;
+    bottom: 88px;
+    z-index: 1;
+    background: var(--white);
+    color: var(--navy-2);
+    border: none;
+    padding: 16px 26px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.smart-hiring-process .cta:hover {
+    background: var(--cyan-soft);
+    transition: background 0.35s ease, color 0.35s ease, border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.smart-hiring-process .cta a {
+    color: var(--navy-2) !important;
+    cursor: pointer;
+}
+
+@keyframes smart-hiring-process-shine-sweep {
+    0% {
+        left: -60%;
+    }
+
+    35% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+/* ---------- timeline ---------- */
+.smart-hiring-process .timeline {
+    display: flex;
+    align-items: center;
+    margin: 44px 0 40px;
+}
+
+.smart-hiring-process .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.smart-hiring-process .circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    border: 1.5px solid rgba(255, 255, 255, 0.55);
+    color: var(--white);
+    background: transparent;
+    transition: background-color .5s ease, border-color .5s ease, box-shadow .5s ease;
+}
+
+.smart-hiring-process .step-label {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Step state is driven by JS toggling these two classes — one circle is ever
+   "is-active" at a time, so there is no risk of two animations fighting over
+   the same property the way independent keyframe-delay math would. */
+.smart-hiring-process .circle.is-active {
+    background: var(--cyan);
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 6px rgba(47, 176, 234, 0.25), 0 0 20px rgba(47, 176, 234, 0.6);
+}
+
+.smart-hiring-process .circle.is-done {
+    background: rgba(47, 176, 234, 0.18);
+    border-color: var(--cyan);
+    box-shadow: none;
+}
+
+.smart-hiring-process .connector {
+    position: relative;
+    flex: 1;
+    height: 2px;
+    margin: 0 6px 34px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35) 50%, transparent 50%);
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    overflow: visible;
+}
+
+/* .fill's width is driven by JS (transition duration matches the step interval),
+   so it visibly travels left-to-right in lockstep with the step that is currently
+   "in progress", then stays filled once that step is marked done. */
+.smart-hiring-process .connector .fill {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--cyan), var(--cyan-soft));
+    box-shadow: 0 0 10px rgba(47, 176, 234, 0.7);
+}
+
+/* ---------- cards row ---------- */
+/* A dedicated spacer element (.card-connector) sits between each pair of cards
+   carrying the traveling light, so flex replaces the old equal-column grid. */
+.smart-hiring-process .cards {
+    display: flex;
+    align-items: stretch;
+}
+
+.smart-hiring-process .card {
+    background: var(--white);
+    border-radius: var(--card-radius);
+    padding: 26px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 420px;
+    box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+/* Only the card the sequencer has marked "active" is allowed to animate at
+   all — every other card must render pixel-identical to the static reference. */
+.smart-hiring-process .card.active {
+    animation: smart-hiring-process-card-breathe 3.6s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-card-breathe {
+
+    0%,
+    100% {
+        box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.35);
+    }
+
+    50% {
+        box-shadow: 0 26px 55px -18px rgba(0, 0, 0, 0.28);
+    }
+}
+
+/* ---------- card-to-card pipeline light ---------- */
+.smart-hiring-process .card-connector {
+    flex: 0 0 64px;
+    width: 64px;
+    position: relative;
+    align-self: stretch;
+}
+
+.smart-hiring-process .card-connector .track {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+    background-size: 8px 2px;
+    background-repeat: repeat-x;
+}
+
+/* Base position is expressed purely as a transform (no left/top animation) so the
+   JS-driven travel below only ever touches transform/opacity — no layout recalced. */
+.smart-hiring-process .card-connector .light {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 235, 255, 1), rgba(127, 212, 245, 0.75) 45%, transparent 75%);
+    box-shadow: 0 0 16px 4px rgba(47, 176, 234, 0.85);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+/* Short comet-style trail riding behind the dot — a child pseudo-element moves
+   with its parent for free, so this needs no extra JS beyond knowing which way
+   "behind" is. JS toggles .is-reverse to flip it for the 04->01 return trip. */
+.smart-hiring-process .card-connector .light::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 7px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(127, 212, 245, 0) 0%, rgba(200, 235, 255, .65) 100%);
+    transform: translate(-100%, -50%);
+    filter: blur(1.5px);
+}
+
+.smart-hiring-process .card-connector .light.is-reverse::before {
+    background: linear-gradient(270deg, rgba(127, 212, 245, 0) 0%, rgba(200, 235, 255, .65) 100%);
+    transform: translate(0%, -50%);
+}
+
+.smart-hiring-process .card-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.smart-hiring-process .card-head .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ink);
+    transition: background-color .3s ease, box-shadow .3s ease;
+}
+
+/* A small "live" pulse on the header bullet — ties the header into the same
+   card.active convention as everything else, without ever animating while idle. */
+.smart-hiring-process .card.active .card-head .dot {
+    animation: smart-hiring-process-head-dot-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-head-dot-pulse {
+
+    0%,
+    100% {
+        background: var(--ink);
+        box-shadow: 0 0 0 0 rgba(47, 176, 234, 0);
+    }
+
+    50% {
+        background: var(--cyan);
+        box-shadow: 0 0 0 5px rgba(47, 176, 234, 0.25);
+    }
+}
+
+.smart-hiring-process .badges {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.smart-hiring-process .badge {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--gray-200);
+    border-radius: 999px;
+    padding: 6px 9px;
+    font-size: 11.5px;
+    color: #334155;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.smart-hiring-process .badge svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+/* Reuses the same shine-sweep keyframe as the CTA button/footer pills, just
+   staggered per badge so they don't all catch the light at once. */
+.smart-hiring-process .badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(115deg, transparent, rgba(47, 176, 234, 0.3), transparent);
+}
+
+.smart-hiring-process .card.active .badge::after {
+    animation: smart-hiring-process-shine-sweep 2.6s ease-in-out infinite;
+}
+
+.smart-hiring-process .badges .badge:nth-child(1)::after {
+    animation-delay: 0s;
+}
+
+.smart-hiring-process .badges .badge:nth-child(2)::after {
+    animation-delay: .6s;
+}
+
+.smart-hiring-process .badges .badge:nth-child(3)::after {
+    animation-delay: 1.2s;
+}
+
+.smart-hiring-process .card-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.smart-hiring-process .card-footer {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Clips the odometer-style flip below — sized to the number's own line-height so
+   the outgoing/incoming digit always travels exactly one "row" up or down. */
+.smart-hiring-process .card-footer .num-wrap {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    line-height: 1.15;
+}
+
+.smart-hiring-process .card-footer .num {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+    display: inline-block;
+}
+
+.smart-hiring-process .card-footer .lbl {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.smart-hiring-process #card3.show-hired .card-footer .num,
+.smart-hiring-process #card3.show-hired .card-footer .lbl {
+    color: var(--green);
+}
+
+/* ---------- card 1: application stack ---------- */
+/* Sized to the real SVG asset's aspect ratio (246:325). s1 (front) renders the
+   actual asset directly; s2/s3 stay flat placeholder rects (barely visible
+   behind the fan) rather than duplicating the full asset for no visual gain. */
+.smart-hiring-process .stack {
+    position: relative;
+    width: 220px;
+    height: 260px;
+}
+
+.smart-hiring-process .sheet {
+    position: absolute;
+    left: 50%;
+    width: 180px;
+    height: 238px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px -10px rgba(15, 36, 54, 0.25);
+}
+
+.smart-hiring-process .sheet.s1 {
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.smart-hiring-process .sheet.s1 svg {
+    display: block;
+}
+
+/* Fanned out by rotation pivoting from the bottom center — a classic "spread
+   deck of cards" look. Resting transform/opacity equals each animation's own
+   "settled" keyframe value, so when the card goes idle mid-cycle the removed
+   animation snaps to a value that already matches — no visible pop. */
+.smart-hiring-process .sheet.s2 {
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    background: var(--gray-100);
+    transform-origin: bottom center;
+    transform: translate(-50%, 0) rotate(-9deg);
+    opacity: .9;
+}
+
+.smart-hiring-process .sheet.s3 {
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    background: var(--gray-100);
+    transform-origin: bottom center;
+    transform: translate(-50%, 0) rotate(9deg);
+    opacity: .75;
+}
+
+.smart-hiring-process .card.active .sheet.s2 {
+    animation-name: smart-hiring-process-sheet-in-s2;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+    animation-iteration-count: infinite;
+}
+
+.smart-hiring-process .card.active .sheet.s3 {
+    animation-name: smart-hiring-process-sheet-in-s3;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+    animation-delay: 1.2s;
+    /* delay + entrance must finish inside ANIMATION_CONFIG.cardDuration (3s) */
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+/* The fanned sheets stay at their default visible resting opacity at all times
+   (matching the card's idle look) — only their position settles slightly, as if
+   a new application were being pulled to the front of the queue. No opacity dip
+   to 0, so the stack never flashes empty/invisible when a cycle starts. */
+@keyframes smart-hiring-process-sheet-in-s2 {
+    0% {
+        transform: translate(-50%, -14px) rotate(-9deg);
+    }
+
+    18% {
+        transform: translate(-50%, 0) rotate(-9deg);
+    }
+
+    75% {
+        transform: translate(-50%, 0) rotate(-9deg);
+    }
+
+    100% {
+        transform: translate(-50%, 6px) rotate(-9deg);
+    }
+}
+
+@keyframes smart-hiring-process-sheet-in-s3 {
+    0% {
+        transform: translate(-50%, -14px) rotate(9deg);
+    }
+
+    18% {
+        transform: translate(-50%, 0) rotate(9deg);
+    }
+
+    75% {
+        transform: translate(-50%, 0) rotate(9deg);
+    }
+
+    100% {
+        transform: translate(-50%, 6px) rotate(9deg);
+    }
+}
+
+/* Skeleton bars inside the inlined SVG asset: a staggered opacity pulse reads as
+   "actively scanning this content", each bar offset by its own --sb-delay so the
+   pulse sweeps down the list rather than blinking all at once. */
+/* Cross-fades each bar with a moving highlight band via CSS mask (not an
+   opacity blink) — a genuine left-to-right shimmer sweep, staggered per bar
+   via --sb-delay so it reads as a wave passing down the list. White+alpha
+   stops (not gray) so the same gradient behaves the same whether a browser's
+   mask-image treats it as luminance or alpha. */
+.smart-hiring-process .skel-bar {
+    transition: opacity .3s ease;
+    -webkit-mask-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .62) 50%, rgba(255, 255, 255, 1) 70%);
+    mask-image: linear-gradient(100deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, .62) 50%, rgba(255, 255, 255, 1) 70%);
+    -webkit-mask-size: 260% 100%;
+    mask-size: 260% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: 160% 0;
+    mask-position: 160% 0;
+}
+
+.smart-hiring-process .card.active .skel-bar {
+    animation: smart-hiring-process-skel-shimmer-sweep 2.4s linear infinite;
+    animation-delay: var(--sb-delay, 0s);
+}
+
+@keyframes smart-hiring-process-skel-shimmer-sweep {
+    from {
+        -webkit-mask-position: 160% 0;
+        mask-position: 160% 0;
+    }
+
+    to {
+        -webkit-mask-position: -160% 0;
+        mask-position: -160% 0;
+    }
+}
+
+/* ---------- card 2: AI icon (real Figma asset, inlined so its paths/circle can
+   still be individually targeted for animation) ---------- */
+.smart-hiring-process .ai-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.smart-hiring-process .ring-box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+/* transform-box:fill-box so `scale` originates from each path's own center
+   rather than the SVG viewport's corner — otherwise a scaled path would drift
+   instead of pulsing in place. cardDuration doesn't evenly divide the pulse's
+   own cycle length, so a card can deactivate mid-pulse; the transition eases
+   that snap back to rest instead of jumping (CSS ignores transitions while an
+   `animation` owns the property, and only takes over once it's removed). */
+.smart-hiring-process .ring-path {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: scale .3s ease, opacity .3s ease, stroke .3s ease;
+}
+
+/* `rotate` is animated as its own independent transform property alongside the
+   existing `scale` animation (never combined into one `transform:` keyframe) —
+   the same convention this file already uses elsewhere so two transform
+   animations never fight over the same property. Long, alternating-direction
+   durations keep it reading as a slow orbit rather than a spin. */
+.smart-hiring-process .card.active .ring-path.rp1 {
+    animation: smart-hiring-process-ring-scale 4s ease-in-out infinite, smart-hiring-process-ring-rotate 22s linear infinite;
+}
+
+.smart-hiring-process .card.active .ring-path.rp2 {
+    animation: smart-hiring-process-ring-scale 4s ease-in-out infinite .4s, smart-hiring-process-ring-rotate 28s linear infinite reverse;
+}
+
+.smart-hiring-process .card.active .ring-path.rp3 {
+    animation: smart-hiring-process-ring-scale 4s ease-in-out infinite .8s, smart-hiring-process-ring-rotate 34s linear infinite;
+}
+
+@keyframes smart-hiring-process-ring-scale {
+
+    0%,
+    100% {
+        scale: 1;
+        opacity: 1;
+        stroke: #EDEDED;
+    }
+
+    50% {
+        scale: 1.045;
+        opacity: .6;
+        stroke: #7fd4f5;
+    }
+}
+
+@keyframes smart-hiring-process-ring-rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.smart-hiring-process .ai-badge-circle {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: filter .3s ease;
+}
+
+.smart-hiring-process .card.active .ai-badge-circle {
+    animation: smart-hiring-process-ai-badge-glow 3.4s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-ai-badge-glow {
+
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.35);
+    }
+}
+
+/* Shared "wakes up" entrance for the avatar/badge icons in all three cards —
+   plays once each time a card activates, then naturally settles back to the
+   icon's own normal scale/opacity (its rest style, unchanged), so there's
+   nothing to snap back to when the card goes idle. */
+.smart-hiring-process .icon-pop-in {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process .card.active .icon-pop-in {
+    animation: smart-hiring-process-icon-pop .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@keyframes smart-hiring-process-icon-pop {
+    0% {
+        scale: .5;
+        opacity: .5;
+    }
+
+    60% {
+        scale: 1.08;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/* Continuous "still working" breathing pulse for an active card's main icon —
+   separate from icon-pop-in's one-shot entrance above, this keeps going for
+   the rest of the card's active window. Own transition so a mid-pulse
+   deactivation eases back to rest instead of snapping. */
+.smart-hiring-process .icon-breathe {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: scale .3s ease, filter .3s ease;
+}
+
+.smart-hiring-process .card.active:not(.show-hired) .icon-breathe {
+    animation: smart-hiring-process-icon-breathe-pulse 2.8s ease-in-out infinite;
+    animation-delay: .5s;
+}
+
+@keyframes smart-hiring-process-icon-breathe-pulse {
+
+    0%,
+    100% {
+        scale: 1;
+        filter: brightness(1);
+    }
+
+    50% {
+        scale: 1.035;
+        filter: brightness(1.12);
+    }
+}
+
+.smart-hiring-process .checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 18px;
+    width: 100%;
+}
+
+.smart-hiring-process .check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #334155;
+    padding: 3px 6px;
+    margin: -3px -6px;
+    border-radius: 8px;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+/* Idle default is the *unchecked* look (plain gray box, hidden icon) — each
+   checkmark only "ticks on" once its turn comes during card 2's active window,
+   rather than always showing pre-checked. Falls back here smoothly (via the
+   transitions below) the instant the card goes idle again. */
+.smart-hiring-process .check-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* a real zero-alpha shadow (not the bare keyword "none") so the transition below
+     has a concrete value to interpolate toward if the glow is cut off mid-pulse */
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    transition: box-shadow .3s ease, background-color .3s ease;
+}
+
+.smart-hiring-process .check-box svg {
+    width: 11px;
+    height: 11px;
+    opacity: 0;
+    transform: scale(.4);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+/* Two animations sharing one delay: the box ticks from gray to green once
+   (check-fill-pop, `forwards` so it holds), then keeps glowing for the rest of
+   the active window (check-glow, infinite) — same idea as the icon pop below. */
+.smart-hiring-process .card.active .check-box.pulse {
+    animation: smart-hiring-process-check-glow 3.2s cubic-bezier(.4, 0, .2, 1) infinite,
+        smart-hiring-process-check-fill-pop .4s cubic-bezier(.34, 1.56, .64, 1) forwards;
+}
+
+.smart-hiring-process .card.active .check-box.pulse svg {
+    animation: smart-hiring-process-check-icon-pop .4s cubic-bezier(.34, 1.56, .64, 1) forwards;
+}
+
+/* Row highlight uses the exact same per-row delay as its own checkbox glow, so
+   the label briefly tints at the same instant its checkmark pulses — reads as
+   "confirming this item" one row at a time instead of a generic idle shimmer. */
+.smart-hiring-process .card.active .check-item {
+    animation: smart-hiring-process-check-row-flash 3.2s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+.smart-hiring-process .check-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.smart-hiring-process .check-item:nth-child(1) .check-box,
+.smart-hiring-process .check-item:nth-child(1) .check-box svg {
+    animation-delay: 0s;
+}
+
+.smart-hiring-process .check-item:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.smart-hiring-process .check-item:nth-child(2) .check-box,
+.smart-hiring-process .check-item:nth-child(2) .check-box svg {
+    animation-delay: .5s;
+}
+
+.smart-hiring-process .check-item:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.smart-hiring-process .check-item:nth-child(3) .check-box,
+.smart-hiring-process .check-item:nth-child(3) .check-box svg {
+    animation-delay: 1s;
+}
+
+.smart-hiring-process .check-item:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.smart-hiring-process .check-item:nth-child(4) .check-box,
+.smart-hiring-process .check-item:nth-child(4) .check-box svg {
+    animation-delay: 1.5s;
+}
+
+@keyframes smart-hiring-process-check-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+
+    12% {
+        box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.3);
+    }
+
+    28% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+
+@keyframes smart-hiring-process-check-fill-pop {
+    0% {
+        background-color: var(--gray-200);
+    }
+
+    100% {
+        background-color: var(--green);
+    }
+}
+
+@keyframes smart-hiring-process-check-icon-pop {
+    0% {
+        opacity: 0;
+        transform: scale(.4);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes smart-hiring-process-check-row-flash {
+    0% {
+        background-color: rgba(34, 197, 94, 0);
+        color: #334155;
+    }
+
+    12% {
+        background-color: rgba(34, 197, 94, 0.1);
+        color: #166534;
+    }
+
+    28% {
+        background-color: rgba(34, 197, 94, 0);
+        color: #334155;
+    }
+
+    100% {
+        background-color: rgba(34, 197, 94, 0);
+        color: #334155;
+    }
+}
+
+/* ---------- card 3: best fit (real Figma asset, inlined) ---------- */
+/* Card 3 now carries two full-card SVG views (best-fit / hired) crossfaded on
+   top of each other — see .fit-stage below. The best-fit-only animations here
+   are scoped with :not(.show-hired) so they don't keep running (invisibly)
+   once the hired view has taken over. */
+.smart-hiring-process .fit-card-svg {
+    display: block;
+}
+
+/* The score ring is drawn as a single open-arc path (not a div/border), so it's
+   pulsed the same way as card2's rings: `scale`/`opacity` as an independent
+   transform property, gated to .card.active, easing back to rest via transition
+   if a card deactivates mid-pulse. */
+.smart-hiring-process .score-ring-path {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: scale .3s ease, opacity .3s ease;
+}
+
+.smart-hiring-process .card.active:not(.show-hired) .score-ring-path {
+    animation: smart-hiring-process-score-ring-pulse 3.2s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-score-ring-pulse {
+
+    0%,
+    100% {
+        scale: 1;
+        opacity: 1;
+        filter: drop-shadow(0 0 0 rgba(47, 176, 234, 0));
+    }
+
+    50% {
+        scale: 1.12;
+        opacity: .65;
+        filter: drop-shadow(0 0 6px rgba(47, 176, 234, .55));
+    }
+}
+
+/* Loading-dots row either side of the robot icon — a small sequential fade
+   reads as "still thinking", mirroring the checkmark cascade in card 2. */
+.smart-hiring-process .fit-dot {
+    transition: opacity .3s ease;
+}
+
+.smart-hiring-process .card.active:not(.show-hired) .fit-dot {
+    animation: smart-hiring-process-fit-dot-pulse 1.6s ease-in-out infinite;
+    animation-delay: var(--fd-delay, 0s);
+}
+
+@keyframes smart-hiring-process-fit-dot-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .35;
+    }
+}
+
+.smart-hiring-process .card.active:not(.show-hired) .skel-bar {
+    animation: smart-hiring-process-skel-shimmer-sweep 2.4s linear infinite;
+    animation-delay: var(--sb-delay, 0s);
+}
+
+/* ---------- card 3 stage 04: candidate hired ---------- */
+/* Both views are absolutely stacked in the same box so the swap reads as one
+   card's content changing, never as a resize/reflow or a second card
+   appearing — exactly the "physical card stays put" requirement. */
+.smart-hiring-process .fit-stage {
+    position: relative;
+    width: 190px;
+    height: 251px;
+}
+
+.smart-hiring-process .fit-stage .fit-card-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .65s cubic-bezier(.22, .61, .36, 1), transform .65s cubic-bezier(.22, .61, .36, 1);
+}
+
+.smart-hiring-process .fit-stage .view-bestfit {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.smart-hiring-process .fit-stage .view-hired {
+    opacity: 0;
+    transform: translateY(10px) scale(.97);
+    pointer-events: none;
+}
+
+.smart-hiring-process #card3.show-hired .fit-stage .view-bestfit {
+    opacity: 0;
+    transform: translateY(-10px) scale(.97);
+    pointer-events: none;
+}
+
+.smart-hiring-process #card3.show-hired .fit-stage .view-hired {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Hundreds of individual confetti specks in the source asset are treated as one
+   layer — a per-particle physics burst is out of scope, but the reference's
+   "restrained, static confetti ring" look only needs a single soft breathe to
+   not feel frozen. */
+.smart-hiring-process .hired-confetti {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-confetti {
+    animation: smart-hiring-process-hired-confetti-breathe 3.4s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-hired-confetti-breathe {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .82;
+    }
+}
+
+/* Success checkmark: a slow scale + green glow breathe for the whole 3s hold —
+   "gently pulses... green glow subtly breathes" per spec, nothing sharper. */
+.smart-hiring-process .hired-check-group {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-check-group {
+    animation: smart-hiring-process-hired-check-glow 2.6s ease-in-out infinite;
+}
+
+@keyframes smart-hiring-process-hired-check-glow {
+
+    0%,
+    100% {
+        scale: 1;
+        filter: drop-shadow(0 0 0 rgba(34, 197, 94, 0));
+    }
+
+    50% {
+        scale: 1.045;
+        filter: drop-shadow(0 0 9px rgba(34, 197, 94, 0.5));
+    }
+}
+
+.smart-hiring-process .hired-score-ring {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-score-ring {
+    animation: smart-hiring-process-score-ring-pulse 3.2s ease-in-out infinite;
+}
+
+/* Candidate Score panel + HRMS logo reveal slightly after the rest of the
+   hired view has crossfaded in (see .fit-stage transition above), reading as
+   their own small "reveal" rather than appearing instantly with everything
+   else at once. */
+.smart-hiring-process .hired-score-panel,
+.smart-hiring-process .hired-logo {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-score-panel {
+    animation: smart-hiring-process-hired-panel-in .5s cubic-bezier(.22, .61, .36, 1) .15s backwards;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-logo {
+    animation: smart-hiring-process-hired-panel-in .5s cubic-bezier(.22, .61, .36, 1) .3s backwards,
+        smart-hiring-process-hired-logo-sweep 2.8s ease-in-out .9s infinite;
+}
+
+@keyframes smart-hiring-process-hired-panel-in {
+    0% {
+        opacity: 0;
+        translate: 0 8px;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes smart-hiring-process-hired-logo-sweep {
+
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.25);
+    }
+}
+
+/* Five star paths pop in one after another via --star-delay (set per star in
+   the markup) — a genuine sequential cascade rather than one simultaneous
+   fade-in. */
+.smart-hiring-process .hired-star {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .hired-star {
+    animation: smart-hiring-process-hired-star-sparkle .55s cubic-bezier(.34, 1.56, .64, 1) backwards;
+    animation-delay: var(--star-delay, 0s);
+}
+
+@keyframes smart-hiring-process-hired-star-sparkle {
+    0% {
+        opacity: 0;
+        scale: .4;
+    }
+
+    60% {
+        opacity: 1;
+        scale: 1.3;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* "High Fit" badge gets a single confirming pop once the stars have finished
+   cascading in, reusing the icon-pop keyframe already defined above. */
+.smart-hiring-process .high-fit-badge {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.smart-hiring-process #card3.active.show-hired .high-fit-badge {
+    animation: smart-hiring-process-icon-pop .45s cubic-bezier(.34, 1.56, .64, 1) .55s backwards;
+}
+
+/* ---------- footer ---------- */
+.smart-hiring-process .footer {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.smart-hiring-process .footer h3 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.smart-hiring-process .pills {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.smart-hiring-process .pill {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.smart-hiring-process .pill svg {
+    width: 15px;
+    height: 15px;
+    opacity: .9;
+}
+
+.smart-hiring-process .pill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    animation: smart-hiring-process-shine-sweep 5s ease-in-out infinite;
+}
+
+.smart-hiring-process .pill:nth-child(1)::after {
+    animation-delay: 0s;
+}
+
+.smart-hiring-process .pill:nth-child(2)::after {
+    animation-delay: 1.6s;
+}
+
+.smart-hiring-process .pill:nth-child(3)::after {
+    animation-delay: 3.2s;
+}
+
+@media (max-width:980px) {
+    .smart-hiring-process .cards {
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .smart-hiring-process .card-connector {
+        display: none;
+    }
+
+    .smart-hiring-process .timeline {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .smart-hiring-process .connector {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .smart-hiring-process *,
+    .smart-hiring-process *::before,
+    .smart-hiring-process *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .smart-hiring-process .cta {
+        right: 95px;
+        bottom: 70px;
+    }
+}
+
+@media (max-width:991px) {
+    .smart-hiring-process .cta {
+        right: 68px;
+        bottom: 52px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .smart-hiring-process .cta {
+        right: 10%;
+        bottom: 14%;
+        padding: 6px 15px;
+        font-size: 9px;
+    }
+}
+
+
+
+/*New Code Added At 20-08-2026 */
+
+.product-banner-section .align-items-center{
+    display:flex;
+    align-items:flex-start !important;
+}

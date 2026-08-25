@@ -1,0 +1,18 @@
+/**
+ * Admin Styles for ACF Import Export Manager
+ * 
+ * @package    ACF_Import_Export_Manager
+ * @author     Your Name
+ * @version    1.0.0
+ * @license    GPL-2.0+
+ * @link       https://example.com
+ *
+ * This file is part of ACF Import Export Manager.
+ * It is distributed under the terms of the GNU General Public License.
+ */
+.tab-content { display: none; }
+#acf-dm-mapping-table-wrapper table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+#acf-dm-mapping-table-wrapper th, #acf-dm-mapping-table-wrapper td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: middle; }
+#acf-dm-mapping-table-wrapper td select, #acf-dm-mapping-table-wrapper td input[type="text"] { width: 100%; box-sizing: border-box; }
+.acf-dm-new-title-wrapper { display: none; }
+.acf-dm-target-select-wrapper { display: none; }

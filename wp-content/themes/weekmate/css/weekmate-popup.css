@@ -1,0 +1,472 @@
+#weekmate-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+#weekmate-popup {
+    width: 840px;
+    max-width: 95%;
+    background: #ffffff;
+    display: flex;
+    border-radius: 70px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    font-family: "Inter", sans-serif;
+    position: relative;
+    animation: popupScale 0.35s ease;
+    border: 1px solid #dceaff;
+    padding: 15px;
+}
+
+
+@keyframes popupScale {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#weekmate-popup {
+    background: white;
+    border-radius: 76px;
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.4s ease-out;
+}
+
+#weekmate-popup-overlay {
+    padding: 20px;
+    overflow: auto;
+}
+
+#weekmate-popup .wk-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+#weekmate-popup .wk-close-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(90deg);
+}
+
+
+#weekmate-popup .wk-right {
+    background: #F6F6F6;
+    border-radius: 75px;
+    padding: 40px 45px;
+    max-height: calc(100dvh - 130px);
+}
+
+#weekmate-popup .wk-left {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#weekmate-popup .wk-right h3 {
+    line-height: normal;
+
+}
+
+#weekmate-popup textarea,
+#weekmate-popup input,
+#weekmate-popup select {
+    background: no-repeat;
+    border-bottom: 1px solid #B2B2B2;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    resize: none;
+}
+
+#weekmate-popup .intl-tel-input.separate-dial-code .selected-flag {
+    background: none;
+}
+
+#weekmate-popup input[type="submit"] {
+    background: #005282;
+    max-width: fit-content;
+    border-radius: 28px;
+    margin-left: auto;
+    display: block;
+}
+
+#weekmate-popup .wpcf7-form {
+    max-width: 100%;
+}
+
+@media (max-width:1380px) {
+    #weekmate-popup .wk-right h3 {
+        font-size: 34px;
+    }
+
+    .wk-right .subtitle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:991px) {
+    #weekmate-popup .wk-right h3 {
+        font-size: 26px;
+    }
+
+    .wk-right .subtitle {
+        font-size: 22px;
+    }
+
+    #weekmate-popup {
+        text-align: left;
+        border-radius: 60px;
+    }
+
+    #weekmate-popup .wk-right {
+        background: #F6F6F6;
+        padding: 40px;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width:767px) {
+    #weekmate-popup {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    #weekmate-popup .wk-left img {
+        max-width: 280px;
+    }
+
+    #weekmate-popup .wk-left {
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    #weekmate-popup .wk-right h3 {
+        font-size: 24px;
+    }
+
+    .wk-right .subtitle {
+        font-size: 18px;
+    }
+
+    #weekmate-popup .wk-left {
+        display: flex;
+    }
+
+    #weekmate-popup .wk-right {
+        padding: 20px;
+    }
+}
+
+#weekmate-popup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 50px;
+    max-width: 1100px;
+}
+
+#weekmate-popup .wk-left {
+    flex: 1;
+}
+
+#weekmate-popup .wk-right {
+    flex: 0 0 47%;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 44px;
+    padding: 50px 45px;
+}
+
+#weekmate-popup .wk-right h3 {
+    font-size: 36px;
+    color: #005282;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#weekmate-popup .wk-right .subtitle {
+    font-size: 26px;
+    line-height: 1.577;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#weekmate-popup .wpcf7-form p {
+    margin: 0 0 18px;
+}
+
+#weekmate-popup textarea,
+#weekmate-popup input,
+#weekmate-popup select {
+    min-height: 50px;
+    padding: 10px 10px 18px;
+    line-height: 1;
+    color: #5E5E5E;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 500;
+}
+
+#weekmate-popup textarea {
+    min-height: 105px;
+}
+
+#weekmate-popup textarea::placeholder,
+#weekmate-popup input,
+#weekmate-popup select::placeholder {
+    font-size: 16px;
+    color: #5E5E5E;
+    font-weight: 500;
+}
+
+#weekmate-popup input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 24px;
+    background: #005282;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    z-index: 1;
+    transition: all 0.2s linear;
+    font-size: 16px;
+    min-height: 54px;
+    float: right;
+    margin-left: 0;
+}
+
+#weekmate-popup .wpcf7-form p:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#weekmate-popup .wk-right .wk-content {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#weekmate-popup .wpcf7-form p:nth-last-child(2) {
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#weekmate-popup .wk-left img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    #weekmate-popup .wk-right h3 {
+        font-size: 28px;
+    }
+
+    #weekmate-popup .wk-right .subtitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #weekmate-popup .wk-right {
+        padding: 40px 35px 30px;
+    }
+
+    #weekmate-popup .wpcf7-form p {
+        margin: 0 0 10px;
+    }
+
+    #weekmate-popup textarea,
+    #weekmate-popup input,
+    #weekmate-popup select {
+        padding: 10px 10px 14px;
+    }
+
+    #weekmate-popup textarea {
+        min-height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    #weekmate-popup .wk-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #weekmate-popup .wk-right h3 {
+        font-size: 26px;
+    }
+
+    #weekmate-popup .wk-right .subtitle {
+        font-size: 18px;
+    }
+
+    #weekmate-popup textarea::placeholder,
+    #weekmate-popup input,
+    #weekmate-popup select::placeholder {
+        font-size: 13px;
+    }
+
+    #weekmate-popup textarea,
+    #weekmate-popup input,
+    #weekmate-popup select {
+        min-height: 44px;
+        font-size: 13px;
+    }
+
+    #weekmate-popup .wpcf7-form p {
+        margin: 0 0 8px;
+    }
+
+    #weekmate-popup textarea {
+        min-height: 70px;
+    }
+
+    #weekmate-popup input[type="submit"] {
+        font-size: 13px;
+        min-height: 44px;
+        padding: 10px 24px;
+    }
+}
+
+#weekmate-popup input.wpcf7-validates-as-phonetext {
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+
+#weekmate-popup textarea:focus,
+#weekmate-popup input:focus,
+#weekmate-popup select:focus {
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    #weekmate-popup .wk-right {
+        padding: 25px;
+    }
+
+    #weekmate-popup form .wpcf7-response-output {
+        font-size: 12px;
+    }
+}
+
+div#weekmate-popup {
+    max-height: calc(100dvh - 50px);
+}
+
+#weekmate-popup .wk-right {
+    max-height: calc(100dvh - 20px);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+@media (max-width:768px) {
+    #weekmate-popup .wk-right {
+        max-height: 417px;
+    }
+
+    #weekmate-popup .wk-left {
+        padding: 20px;
+    }
+
+    #weekmate-popup .wk-left img {
+        max-width: 170px;
+    }
+
+    #weekmate-popup .wpcf7-not-valid-tip {
+        font-size: 12px;
+    }
+
+    #weekmate-popup form .wpcf7-response-output {
+        margin-top: 5px;
+    }
+
+    #weekmate-popup {
+        gap: 5px;
+    }
+
+    #weekmate-popup .wk-right h3 {
+        font-size: 24px;
+    }
+
+    #weekmate-popup .wk-right .subtitle {
+        margin-bottom: 5px;
+    }
+    
+    #weekmate-popup .intl-tel-input.separate-dial-code .selected-dial-code{
+        font-size : 13px
+    }
+}
+
+/*Css Added At 18-08-2026 for reducing the size of the popup OR 18th August 2026*/
+
+/* #weekmate-popup .wk-right {
+    padding: 40px 45px;
+}
+
+div#weekmate-popup {
+    max-height: calc(100dvh - 90px);
+}
+ */

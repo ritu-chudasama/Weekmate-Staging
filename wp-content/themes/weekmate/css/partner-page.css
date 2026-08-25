@@ -1,0 +1,176 @@
+.partners-card-section .facet-filter,
+.partners-card-section .partners-card-main-wrapper{
+    background: #F6F6F6;
+    border-radius: 14px;
+}
+.partners-card-section .partners-card-main-wrapper {
+    padding: 60px 65px 30px;
+}
+.partners-card-section .facet-filter{
+    padding: 55px 60px;
+}
+.partners-card-section .filter-seacrch-wrapper {
+      background: #fff;
+    border: 1px solid #D9D9D9;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    height: 40px;
+    padding: 0 20px 0 10px;
+}
+.filter-seacrch-wrapper .search-input{
+    background-color: transparent;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 0;
+}
+.post-partner .banner-cta:has(:first-child) .btn-transperent {
+    margin-right: 10px;
+}
+.partners-card-section .filter-seacrch-wrapper .search-btn {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    right: 0;
+    top: 50%;
+    padding: 0 6px;
+    transform: translateY(-50%);
+}
+.partners-card-section .facet-filter-title{
+    margin-bottom: 1rem;
+}
+.facet-filter .filter-list ul{
+    list-style: none;
+}
+.facet-filter .filter-list .tag-checkbox-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+.facet-filter .filter-list .tag-checkbox-wrapper .tag-input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.facet-filter .tag-checkbox-wrapper .tag-checkbox {
+    position: relative;
+    padding-left: 35px;
+}
+.facet-filter .tag-checkbox-wrapper .tag-checkbox::before{
+    border: 1px solid;
+    border-color: #DFDFDF;
+    height: 21px;
+    border-radius: 6px;
+    width: 21px;
+}
+.facet-filter .tag--active .tag-checkbox-wrapper .tag-text{
+    font-weight: 700;
+}
+.facet-filter .tag-checkbox:after, 
+.facet-filter .tag-checkbox:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.facet-filter .tag-checkbox:after{
+   height: 6px;
+    width: 11px;
+    left: 5px;
+    transform: rotate(-40deg);
+    top: 8px;
+
+}
+.facet-filter .tag--active .tag-checkbox:after{
+    border-left: 2px solid #005282;
+    border-bottom: 2px solid #005282;
+}
+.facet-filter .filter-list li{
+    margin-bottom: 1rem;
+}
+.partners-header-wrapper .partner-serach-wrapper {
+    background: #fff;
+    border: 1px solid #D9D9D9;
+    position: relative;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 20px 0 10px;
+    max-width: 285px;
+    margin-left: auto;
+}
+.partner-serach-wrapper .search-input {
+    background-color: transparent;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 0;
+}
+.partners-card-section .partner-serach-wrapper .search-btn {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    right: 0;
+    top: 50%;
+    padding: 0 6px;
+    transform: translateY(-50%);
+}
+.partners-card-section .partners-header-wrapper {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 2rem;
+
+}
+.partners-card-main-wrapper .partners-card-item {
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: #FFFFFF;
+}
+.partners-card-main-wrapper .card-item{
+    margin-bottom: 20px;
+}
+.partners-card-main-wrapper .partners-card-item .company-logo,
+.partners-card-main-wrapper .partners-card-item .partners-card-content{
+    padding: 0 35px;
+}
+.partners-card-main-wrapper .partners-card-item .company-logo{
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 25px;
+}
+
+
+.partners-card-main-wrapper .partners-card-content ul{
+    list-style: none;
+}
+.partners-card-main-wrapper .partners-card-content li{
+    margin-bottom: 10px;
+}
+.partners-card-main-wrapper .partners-card-content ul .icon-text {
+    color: #383838;
+}
+.partners-card-main-wrapper .partners-card-content .partners-card-link{
+    margin-top: 25px;
+}
+.partners-card-main-wrapper .partners-card-content .partners-card-link a{
+    color: #383838;
+}
+.partners-card-main-wrapper .company-logo img{
+    
+    max-width: 170px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.partners-card-main-wrapper .partners-card-content .partners-logo-wrapper {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.partners-card-main-wrapper .partners-card-item .partners-card-content ul li a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

@@ -1,0 +1,317 @@
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+    --wrl-purple:       #005282;
+    --wrl-purple-dark:  #005282;
+    --wrl-purple-light: #ede9fe;
+    --wrl-hero-bg:      #e0f7fa;
+    --wrl-benefits-bg:  #ffffff;
+    --wrl-text:         #1e1b4b;
+    --wrl-text-muted:   #4b5563;
+    --wrl-border:       #d1d5db;
+    --wrl-tick:         #7c3aed;
+    --wrl-radius:       8px;
+    --wrl-max-width:    1100px;
+    --wrl-gap:          48px;
+}
+
+/* ── Reset / Base ───────────────────────────────────────────── */
+.wrl-page *,
+.wrl-page *::before,
+.wrl-page *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrl-page-title {
+    background-color: #ffffff;
+    padding: 28px 0;
+}
+
+.wrl-page-title__text {
+    font-weight: 800;
+    color: var(--wrl-text-dark);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.wrl-page {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--wrl-text);
+    line-height: 1.6;
+}
+
+/* ── Container ──────────────────────────────────────────────── */
+.wrl-container {
+    max-width: var(--wrl-max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.wrl-page .container {
+    margin: 0 auto;
+    padding:0 20px;
+}
+
+.wrl-site-title{
+    margin: 60px 0 20px; 
+}
+
+.wrl-page .container .wrl-site-title__text {
+    color: #310052;
+    direction: ltr;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 150%;
+    text-align: left;
+}
+
+/* ============================================================
+   SECTION 1 – HERO
+   ============================================================ */
+.wrl-hero {
+    background-color: var(--wrl-hero-bg);
+    padding: 60px 0;
+}
+
+.wrl-hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--wrl-gap);
+    align-items: start;
+}
+
+/* ── Left column ────────────────────────────────────────────── */
+.wrl-hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrl-hero__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--wrl-text);
+    line-height: 1.3;
+}
+
+.wrl-hero__desc-intro {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--wrl-text);
+    line-height: 1.6;
+}
+
+.wrl-hero__desc-para {
+    font-size: 0.95rem;
+    color: var(--wrl-text-muted);
+    line-height: 1.7;
+}
+
+.wrl-hero__desc-para strong,
+.wrl-hero__desc-para b {
+    color: var(--wrl-text);
+    font-weight: 700;
+}
+
+.wrl-hero__image-wrap {
+    margin-top: 12px;
+}
+
+.wrl-hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--wrl-radius);
+}
+
+/* ── Right column ───────────────────────────────────────────── */
+.wrl-hero__right {
+    background: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+}
+
+/* Purple banner above form */
+.wrl-hero__form-heading {
+    background-color: var(--wrl-purple);
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.wrl-hero__form-heading p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* CF7 form wrapper */
+.wrl-hero__form-body {
+    padding: 24px;
+}
+
+/* ── CF7 form field styling ─────────────────────────────────── */
+.wrl-hero__form-body .wpcf7-form label,
+.wrl-hero__form-body .wpcf7-form p > span:first-child {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--wrl-text);
+    margin-bottom: 4px;
+}
+
+.wrl-hero__form-body .wpcf7-form input[type="text"],
+.wrl-hero__form-body .wpcf7-form input[type="email"],
+.wrl-hero__form-body .wpcf7-form input[type="tel"],
+.wrl-hero__form-body .wpcf7-form input[type="number"],
+.wrl-hero__form-body .wpcf7-form select,
+.wrl-hero__form-body .wpcf7-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--wrl-purple);
+    border-radius: var(--wrl-radius);
+    font-size: 0.9rem;
+    color: var(--wrl-text);
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 0px;
+}
+
+.wrl-hero__form-body .wpcf7-form input:focus,
+.wrl-hero__form-body .wpcf7-form textarea:focus {
+    border-color: var(--wrl-purple-dark);
+    box-shadow: 0 0 0 3px var(--wrl-purple-light);
+}
+
+/* Submit button */
+.wrl-hero__form-body .wpcf7-form input[type="submit"] {
+    width: 100%;
+    background-color: var(--wrl-purple);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--wrl-radius);
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0px;
+}
+
+.wrl-hero__form-body .wpcf7-form input[type="submit"]:hover {
+    background-color: var(--wrl-purple-dark);
+}
+
+/* Checkbox consent */
+.wrl-hero__form-body .wpcf7-form .wpcf7-checkbox label,
+.wrl-hero__form-body .wpcf7-form .wpcf7-acceptance label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--wrl-text-muted);
+    line-height: 1.5;
+}
+
+.wrl-hero__form-body p {
+    margin-bottom: 12px;
+}
+
+/* Form notice (no form ID set) */
+.wrl-form-notice {
+    color: var(--wrl-text-muted);
+    font-size: 0.9rem;
+    padding: 12px;
+    background: #fef3c7;
+    border-radius: var(--wrl-radius);
+    border: 1px solid #fcd34d;
+}
+
+/* ============================================================
+   SECTION 2 – BENEFITS
+   ============================================================ */
+.wrl-benefits {
+    background-color: var(--wrl-benefits-bg);
+    padding: 60px 0;
+}
+
+.wrl-benefits__title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    color: var(--wrl-text);
+    margin-bottom: 32px;
+}
+
+/* 2-column grid */
+.wrl-benefits__grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.wrl-benefits__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.wrl-benefits__icon {
+    flex-shrink: 0;
+    color: var(--wrl-tick);
+    margin-top: 2px;
+}
+
+.wrl-benefits__text {
+    font-size: 0.95rem;
+    color: var(--wrl-text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* Tablet */
+@media ( max-width: 900px ) {
+    .wrl-hero__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .wrl-hero__right, .wrl-hero__left {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media ( max-width: 600px ) {
+    .wrl-hero {
+        padding: 40px 0;
+    }
+
+    .wrl-benefits {
+        padding: 40px 0;
+    }
+
+    .wrl-benefits__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wrl-page .container .wrl-site-title__text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 425px){
+    .wrl-hero__title{
+        font-size: 20px;
+    }
+}

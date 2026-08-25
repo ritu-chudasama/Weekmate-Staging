@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>ACF Data Manager</title>
+ 	<meta name="description" content="Elavon Converge's secure online payment gateway makes it easy and hassle free for you to accept credit card payments through your website.">
+	<meta name="author" content="Elsner Technologies Pvt. Ltd.">
+	<meta name="copyright" content="Elsner Technologies Pvt. Ltd.">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2018-04-19T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#FF9012;color:#FFFCFC;}
+		::selection{background:#FF9012;color:#FFFCFC;}
+		a.brand{background-image:url(assets/images/elavon_converge.png);}
+		a, a:hover, a:active{color:#FFB829;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#FFFFFF;color:#222222;}
+		a.btn-navbar{background:#FFFFFF;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#FF9012;color:#FFFCFC;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#FF9012;color:#FFFCFC;}
+		.navbar .nav li ul li a:hover{background:#FF9012;color:#FFFCFC;}
+		.navbar .nav li ul li a:active{background:#FF9012;color:#FFFCFC;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 #0088CC, from(#FFFFFF), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+
+		#features ol li,#configuration ol li{ font-family: Arial; font-size: 11pt; color: rgb(0, 0, 0); margin-top: 5pt !important; }
+	</style>
+	
+	<link rel="stylesheet" href="assets/css/custom.css" media="screen">
+
+	
+    </head>
+    
+<body class="documenter-project-woocommerce-eway-gaeway" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">ACF Data Manager</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#configuration" title="Configuration">Configuration</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#requirements" title="Requirements">Requirements</a></li>
+			<li><a href="#testing" title="Testing">Testing</a></li>			
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+		<div class="masthead">
+		    <h1>ACF Data Manager</h1>
+		    <p>ACF Data Manager is a WordPress plugin that allows you to easily export and import data from Advanced Custom Fields (ACF).</p>
+		    <ul class="marketing-byline">
+				<li><b>Created: </b> 11/08/2025</li>
+				<li><b>Latest Update:</b> 11/08/2025</li>
+				<li><b>By:</b><a href="https://www.elsner.com" title="by"> Elsner Technologies Pvt. Ltd.</a></li>
+				
+				
+			</ul>
+		    <p class="download-info">
+				
+			</p>
+			
+		</div> <!-- masthead -->
+	
+	   	<div id="intro">
+	    	<!-- <p class="highlight hero-unit"> -->
+	    	<div  class="highlight hero-unit">
+		    	<ul>
+		    		<li>Export ACF Data:  Export ACF field data from individual posts, all posts of a specific type, or all options pages.</li>
+					<li>Import ACF Data:  Import ACF field data to individual posts or options pages.</li>
+					<li>Flexible Formats:  Supports both JSON and XML file formats for export and import.</li>
+					<li>Overwrite Option:  Choose to overwrite existing fields during the import process.</li>
+					<li>Mapping Interface:  For "all posts" exports, the plugin provides a mapping table to link imported data with existing posts or create new ones.</li>
+					<li>User-Friendly Interface:  A simple and intuitive admin page makes it easy to manage your ACF data.</li>
+					<li>ACF Dependency:  The plugin requires the Advanced Custom Fields plugin to be installed and active. An admin notice will be displayed if ACF is not active.</li>
+		    	</ul>
+	    	</div>
+	    	<!-- </p> -->
+	   	</div> <!-- intro -->   
+	</div>
+      
+	<section id="configuration">
+		<div class="page-header"><h3>Configuration</h3><hr class="notop"></div>
+		<ol>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Install the Plugin
+				<ul>
+					<li>Upload the plugin to <code>wp-content/plugins/</code> and activate it in WordPress Admin.</li>
+					<li>If you're using an older version, please reset it first before using the new version.</li>
+				</ul>
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Go to ACF Data Manager Settings
+				<ul>
+					<li>Navigate to Tools > ACF Data Manager</li>
+				</ul>
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Exporting ACF Data
+				<ul>
+					<li>Select Post Type from Dropdowm</li>
+					<li>Select Export Options:</li>
+				</ul>
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 14-58-50.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+			<br>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				You have 3 option for export data
+				<ul>
+					<li>All Posts</li>
+					<li>Single Post</li>
+					<li>Single Field Group</li>
+				</ul>
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 15-55-05.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+			<br>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				If you select "All Posts" option, you will see a mapping table to link imported data with existing posts or create new ones when you import.
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				If you select "Single Post" option, There is posts select drodown will appear then you need to select any post and click on inport.
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 15-06-58.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+			<br>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				If you select "Single Field Group" option, There is posts select drodown will appear then you need to select any post after that based on that post field group dropdwon will appear then you need to select any option and click on import.
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 15-05-51.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+			<br>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Import ACF Data
+				<ul>
+					<li>Select Target Post Type from Dropdowm</li>
+					<li>Choose File</li>
+					<li>Click on overwrite existing ACF fields with the same name if you want to overwrite data</li>
+					<li>Click on Upload and Import button</li>
+				</ul>
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 16-09-19.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+			<br>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				If file has all page export option then you will see mapping table, you have 3 `options` to import data map existing create new and skip.
+			</li>
+			<br>
+			<div>
+				<span id="docs-internal-guid-08cf7a6b-dcdc-a631-55a5-b9518cdcfb11"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"><img height="500" src="assets/images/Screenshot from 2025-08-11 15-12-27.png" style="border: none; transform: rotate(0.00rad); -webkit-transform: rotate(0.00rad);" width="642"></span></span>
+			</div>
+		</ol>
+	</section>
+
+	<section id="features">
+		<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+		<ol dir="ltr">
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+			Export ACF Data
+				<ul>
+					<li>Export ACF field data on a page-wise, post-wise, and option-wise basis.</li>
+					<li>Supports both JSON and XML file formats.</li>
+				</ul>   
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+			Import ACF Data
+				<ul>
+					<li>Import ACF field data to individual posts or options pages.</li>
+					<li>Supports both JSON and XML file formats.</li>
+					<li>Option to overwrite existing ACF fields with the same name during import.</li>
+				</ul>
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+			Data Mapping
+				<ul>
+					<li>For "all posts" exports, the plugin provides a mapping table.</li>
+					<li>Helps to link imported data with existing posts or create new ones.</li>
+				</ul>
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+			Admin Interface
+				<ul>
+					<li>A simple and intuitive admin page makes it easy to manage your ACF data.</li>
+					<li>Includes separate tabs for Export and Import.</li>
+				</ul>
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+			ACF Dependency
+				<ul>
+					<li>Requires the Advanced Custom Fields plugin to be installed and active.</li>
+					<li>Displays an admin notice if ACF is not active.</li>
+				</ul>
+			</li> 
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Easy and Hassle-Free import and export of ACF data.
+			</li>
+		</ol>
+	</section>
+	
+	<section id="requirements">
+		<div class="page-header"><h3>Requirements</h3><hr class="notop"></div>
+		<ol dir="ltr">
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				You need to have ACF Plugin installed and active in both site if you are exporting and importing data in different site.
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				You need to have ACF Data Manager Plugin installed and active in both site if you are exporting and importing data in different site.
+			</li>		
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				Please make sure that you have the correct permissions to access the ACF Data Manager settings in your WordPress admin panel.
+			</li>
+			<li style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;">
+				PLease Backup your database before performing import operations to prevent data loss in case of errors.
+			</li>
+		</ol>
+	</section>
+
+	<section id="testing">
+		<div class="page-header"><h3>Testing</h3><hr class="notop"></div>
+		<p>To test the ACF Data Manager Please follow above proccess of <a href="#configuration" title="Configuration">Configuration</a></p>
+	</section>
+
+	<hr />
+
+	<footer>
+	    <p>Copyright Elsner Technologies PVT. LTD. 2025</p>
+	</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>

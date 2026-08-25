@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title + description are set from PAGE_DATA by hydrate() below -->
+    <title>WeekMate HRMS</title>
+    <meta name="description" content="" />
+    <!-- <link rel="canonical" href="https://weekmate.in/{{url_slug}}/" /> set server-side -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ============================================================
+       WEEKMATE BRAND TOKENS  —  swap these to the official palette.
+       Everything else inherits from here, so one edit re-themes
+       every city page generated from this template.
+       ============================================================ */
+      :root {
+        --ink: #14203b; /* primary headings / dark text */
+        --primary: #3551e6; /* brand blue — CTAs, links, accents */
+        --primary-dk: #2238b0; /* hover */
+        --accent: #0fb5a4; /* teal — solution ticks, highlights */
+        --bg: #ffffff;
+        --bg-soft: #f5f7fb; /* section bands */
+        --bg-warm: #fff6f2; /* pain-point band tint */
+        --line: #e4e8f1;
+        --muted: #5a6680;
+        --font-display: "Space Grotesk", system-ui, sans-serif;
+        --font-body: "Inter", system-ui, sans-serif;
+        --maxw: 1080px;
+        --radius: 16px;
+        --shadow:
+          0 1px 2px rgba(20, 32, 59, 0.06),
+          0 12px 32px rgba(20, 32, 59, 0.06);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        line-height: 1.15;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      /* ---------- top bar ---------- */
+      .nav {
+        border-bottom: 1px solid var(--line);
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(8px);
+        z-index: 20;
+      }
+      .nav .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .brand {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--ink);
+        text-decoration: none;
+        letter-spacing: -0.01em;
+      }
+      .brand span {
+        color: var(--primary);
+      }
+      .nav .btn {
+        padding: 9px 18px;
+        font-size: 14px;
+      }
+
+      /* ---------- buttons ---------- */
+      .btn {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 14px 26px;
+        border-radius: 999px;
+        transition:
+          background 0.18s ease,
+          transform 0.18s ease;
+      }
+      .btn:hover {
+        background: var(--primary-dk);
+        transform: translateY(-1px);
+      }
+      .btn:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      /* ---------- hero ---------- */
+      .hero {
+        padding: 72px 0 56px;
+      }
+      .eyebrow {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--primary);
+        display: inline-block;
+        margin-bottom: 18px;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 5.2vw, 52px);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        max-width: 18ch;
+      }
+      .hero .sub {
+        margin-top: 18px;
+        font-size: 19px;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+      .hero .cta {
+        margin-top: 30px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .btn.ghost {
+        background: transparent;
+        color: var(--primary);
+        border: 1.5px solid var(--line);
+      }
+      .btn.ghost:hover {
+        background: var(--bg-soft);
+      }
+
+      /* ---------- section scaffold ---------- */
+      section {
+        padding: 56px 0;
+      }
+      .band {
+        background: var(--bg-soft);
+      }
+      .band-warm {
+        background: var(--bg-warm);
+      }
+      .sec-head {
+        max-width: 64ch;
+        margin-bottom: 32px;
+      }
+      .sec-head h2 {
+        font-size: clamp(26px, 3.4vw, 34px);
+        font-weight: 700;
+        letter-spacing: -0.015em;
+      }
+      .sec-head h3 {
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--muted);
+        margin-top: 10px;
+        font-family: var(--font-body);
+        line-height: 1.5;
+      }
+      .lede {
+        font-size: 18px;
+        color: var(--ink);
+        max-width: 70ch;
+      }
+
+      /* ---------- places ---------- */
+      .places {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 18px;
+      }
+      .place {
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 22px 22px 24px;
+        box-shadow: var(--shadow);
+      }
+      .band .place {
+        background: #fff;
+      }
+      .place .name {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--ink);
+      }
+      .place .desc {
+        margin-top: 8px;
+        font-size: 15px;
+        color: var(--muted);
+      }
+
+      /* ---------- pain / solution bullet lists ---------- */
+      .bullets {
+        display: grid;
+        gap: 14px;
+        max-width: 80ch;
+      }
+      .bullet {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        font-size: 16.5px;
+      }
+      .bullet .mark {
+        flex: 0 0 auto;
+        width: 26px;
+        height: 26px;
+        border-radius: 8px;
+        display: grid;
+        place-items: center;
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .pain .mark {
+        background: #ffe3da;
+        color: #c2410c;
+      }
+      .fix .mark {
+        background: #d6f5f0;
+        color: #0b7a6f;
+      }
+
+      /* ---------- faqs ---------- */
+      .faq {
+        border-top: 1px solid var(--line);
+      }
+      .faq:last-child {
+        border-bottom: 1px solid var(--line);
+      }
+      .faq button {
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 22px 4px;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--ink);
+      }
+      .faq button:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: -2px;
+        border-radius: 8px;
+      }
+      .faq .icon {
+        flex: 0 0 auto;
+        transition: transform 0.2s ease;
+        color: var(--primary);
+        font-size: 22px;
+      }
+      .faq[open-state="true"] .icon {
+        transform: rotate(45deg);
+      }
+      .faq .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.26s ease;
+      }
+      .faq .answer p {
+        padding: 0 4px 22px;
+        color: var(--muted);
+        font-size: 16px;
+        max-width: 76ch;
+      }
+
+      /* ---------- closing CTA ---------- */
+      .closing {
+        background: var(--ink);
+        color: #fff;
+        text-align: center;
+        border-radius: var(--radius);
+        padding: 56px 24px;
+      }
+      .closing h2 {
+        font-size: clamp(26px, 3.4vw, 34px);
+        color: #fff;
+      }
+      .closing p {
+        color: #b9c2d9;
+        margin-top: 12px;
+        font-size: 18px;
+      }
+      .closing .btn {
+        margin-top: 26px;
+        background: #fff;
+        color: var(--ink);
+      }
+      .closing .btn:hover {
+        background: var(--bg-soft);
+      }
+
+      /* ---------- footer ---------- */
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 32px 0;
+        color: var(--muted);
+        font-size: 13.5px;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding: 48px 0 40px;
+        }
+        section {
+          padding: 44px 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =========================== NAV =========================== -->
+    <header class="nav">
+      <div class="wrap">
+        <a class="brand" href="/">Week<span>Mate</span></a>
+        <a class="btn" href="#demo" data-cta>Book a demo</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================== HERO (H1) =========================== -->
+      <section class="hero">
+        <div class="wrap">
+          <span class="eyebrow" data-eyebrow>WeekMate HRMS</span>
+          <h1 data-field="meta.h1">—</h1>
+          <p class="sub" data-field="meta.meta_description">—</p>
+          <div class="cta">
+            <a class="btn" href="#demo" data-cta>Book a free demo</a>
+            <a class="btn ghost" href="#pricing">View pricing</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 1. INTRODUCTION (H2 + H3) ===================== -->
+      <section>
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 data-field="sections.introduction.h2">—</h2>
+            <h3 data-field="sections.introduction.h3">—</h3>
+          </div>
+          <p class="lede" data-field="sections.introduction.body">—</p>
+        </div>
+      </section>
+
+      <!-- ===================== 2. TOP 5 PLACES (H2 + H3) ===================== -->
+      <section class="band">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 data-field="sections.places.h2">—</h2>
+            <h3 data-field="sections.places.h3">—</h3>
+          </div>
+          <ul class="places" data-list="places"></ul>
+        </div>
+      </section>
+
+      <!-- ===================== 3. COMMON PAIN POINTS (H2 + H3) ===================== -->
+      <section class="band-warm">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 data-field="sections.pain_points.h2">—</h2>
+            <h3 data-field="sections.pain_points.h3">—</h3>
+          </div>
+          <ul class="bullets" data-list="pain"></ul>
+        </div>
+      </section>
+
+      <!-- ===================== 4. HOW WEEKMATE FIXES IT (H2 + H3) ===================== -->
+      <section>
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 data-field="sections.solutions.h2">—</h2>
+            <h3 data-field="sections.solutions.h3">—</h3>
+          </div>
+          <ul class="bullets" data-list="fix"></ul>
+        </div>
+      </section>
+
+      <!-- ===================== 5. FAQS (H2 + H3) ===================== -->
+      <section class="band">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 data-field="sections.faqs.h2">—</h2>
+            <h3 data-field="sections.faqs.h3">—</h3>
+          </div>
+          <div data-list="faqs"></div>
+        </div>
+      </section>
+
+      <!-- ===================== closing CTA ===================== -->
+      <section id="demo">
+        <div class="wrap">
+          <div class="closing">
+            <h2>See WeekMate HRMS in action</h2>
+            <p>Book a 20-minute walkthrough and run your first payroll cycle on us.</p>
+            <a class="btn" href="/demo/">Book a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span data-year></span> WeekMate. All rights reserved.</span>
+        <span
+          >Statutory rates (PF, ESI, PT, TDS) are indicative — verify current
+          rates with a professional.</span
+        >
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       PAGE DATA
+       Replace this object with the JSON your generation prompt
+       returns for each city. (Sample = payroll software in bangalore.)
+       In production: inject server-side, or fetch per route.
+       ============================================================ -->
+    <script id="page-data" type="application/json">
+      {
+        "meta": {
+          "url_slug": "payroll-software-in-bangalore",
+          "h1": "Payroll Software in Bangalore — Built for India's Fastest-Moving Workforce",
+          "meta_title": "Payroll Software in Bangalore | WeekMate HRMS",
+          "meta_description": "Run accurate, compliant payroll for your Bangalore team. WeekMate automates salary, PF, ESI, PT & TDS — built for fast-scaling companies. Book a demo."
+        },
+        "sections": {
+          "introduction": {
+            "h2": "Payroll Software in Bangalore",
+            "h3": "Accurate, on-time salary processing for India's fastest-moving workforce",
+            "body": "Bangalore doesn't slow down. The city that gave India its IT spine still runs on speed — funding rounds, hiring sprints, salary revisions every other quarter. Companies here add headcount faster than their finance teams can keep up, and payroll is usually the first thing to crack. Accuracy and speed aren't a nice-to-have here. They're survival."
+          },
+          "places": {
+            "h2": "Top 5 Business Areas in Bangalore",
+            "h3": "A quick snapshot of the city your team calls home",
+            "items": [
+              {
+                "name": "Electronic City",
+                "description": "Bangalore's flagship IT manufacturing hub, home to Infosys, Wipro, and hundreds of mid-size tech companies managing large distributed workforces."
+              },
+              {
+                "name": "Whitefield",
+                "description": "A rapidly expanding corporate corridor with sprawling tech parks, MNC campuses, and startups all scaling payroll operations simultaneously."
+              },
+              {
+                "name": "Koramangala",
+                "description": "The startup epicentre of Bangalore where fast-growing product companies and funded ventures outpace their manual HR and payroll processes."
+              },
+              {
+                "name": "Hebbal Business District",
+                "description": "An emerging northern business zone hosting SEZs, global captives, and BFSI firms requiring multi-state payroll compliance."
+              },
+              {
+                "name": "Manyata Tech Park",
+                "description": "One of the largest tech parks in South India, housing thousands of employees across finance, IT, and consulting firms with complex salary structures."
+              }
+            ]
+          },
+          "pain_points": {
+            "h2": "Payroll Challenges Bangalore Businesses Face",
+            "h3": "Why salary processing breaks down as you scale",
+            "bullets": [
+              "Headcount scales faster than finance can keep up — 40 people one month, 120 the next.",
+              "Salary structures get revised mid-cycle, and spreadsheets can't hold the changes.",
+              "Variable pay, joining bonuses and ESOP-linked components pile onto every single run.",
+              "High attrition means full-and-final settlements stack up monthly — each one a manual calculation waiting to go wrong.",
+              "Karnataka PT, PF, ESI and TDS deadlines get missed because nothing is automated."
+            ]
+          },
+          "solutions": {
+            "h2": "How WeekMate Simplifies Payroll in Bangalore",
+            "h3": "One engine that closes every salary cycle on time",
+            "bullets": [
+              "One engine runs the whole payroll — attendance and leave flow straight into salary, so nobody re-keys data.",
+              "PF, ESI, Karnataka PT and TDS are computed automatically and ready for filing.",
+              "Mid-cycle revisions update once and reflect everywhere instantly.",
+              "Full-and-final settlements generate in minutes, with every component accounted for.",
+              "Employees pull their own payslips and tax statements from a self-service portal."
+            ]
+          },
+          "faqs": {
+            "h2": "Payroll Software in Bangalore: FAQs",
+            "h3": "Quick answers before you book a demo",
+            "items": [
+              {
+                "question": "Does WeekMate handle Karnataka professional tax automatically?",
+                "answer": "Yes. Karnataka levies professional tax monthly, and WeekMate calculates and deducts it per the state slabs, then prepares the data you need for filing."
+              },
+              {
+                "question": "We're a startup hiring fast in Bangalore. Can WeekMate scale with us?",
+                "answer": "That's exactly who it's built for. Add employees in bulk, set up new salary structures in minutes, and the payroll engine handles 20 people or 2,000 the same way."
+              },
+              {
+                "question": "Can it manage ESOP and variable pay components common in Bangalore tech?",
+                "answer": "Yes. You can configure variable pay, bonuses and other custom components, and they'll flow into the monthly run and tax computation correctly."
+              },
+              {
+                "question": "How fast are full-and-final settlements?",
+                "answer": "Minutes, not days. WeekMate pulls pending dues, recoveries, leave encashment and final deductions into a single settlement you can review and release."
+              },
+              {
+                "question": "Is employee data secure?",
+                "answer": "Salary and personal data sit behind role-based access, so only authorised people see sensitive payroll information."
+              }
+            ]
+          }
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+       HYDRATION  — maps JSON -> DOM. Framework-agnostic vanilla JS.
+       Swap for your server-side template if you prefer; the data
+       attributes above show exactly which JSON field goes where.
+       ============================================================ -->
+    <script>
+      (function () {
+        var data = JSON.parse(document.getElementById("page-data").textContent);
+
+        // resolve "a.b.c" against the data object
+        function get(path) {
+          return path.split(".").reduce(function (o, k) {
+            return (o || {})[k];
+          }, data);
+        }
+
+        // 1) simple text fields
+        document.querySelectorAll("[data-field]").forEach(function (el) {
+          var v = get(el.getAttribute("data-field"));
+          if (v != null) el.textContent = v;
+        });
+
+        // 2) <title> + meta description
+        document.title = get("meta.meta_title") || document.title;
+        var md = document.querySelector('meta[name="description"]');
+        if (md) md.setAttribute("content", get("meta.meta_description") || "");
+
+        // 3) places grid
+        var placesUl = document.querySelector('[data-list="places"]');
+        (get("sections.places.items") || []).forEach(function (p) {
+          var li = document.createElement("li");
+          li.className = "place";
+          li.innerHTML = '<div class="name"></div><div class="desc"></div>';
+          li.querySelector(".name").textContent = p.name;
+          li.querySelector(".desc").textContent = p.description;
+          placesUl.appendChild(li);
+        });
+
+        // 4) pain + fix bullets (marks: pain = "!", fix = check)
+        function fillBullets(listKey, dataPath, markChar) {
+          var ul = document.querySelector('[data-list="' + listKey + '"]');
+          if (!ul) return;
+          (get(dataPath) || []).forEach(function (text) {
+            var li = document.createElement("li");
+            li.className = "bullet " + listKey;
+            li.innerHTML =
+              '<span class="mark"></span><span class="txt"></span>';
+            li.querySelector(".mark").textContent = markChar;
+            li.querySelector(".txt").textContent = text;
+            ul.appendChild(li);
+          });
+        }
+        fillBullets("pain", "sections.pain_points.bullets", "!");
+        fillBullets("fix", "sections.solutions.bullets", "\u2713");
+
+        // 5) FAQ accordion
+        var faqWrap = document.querySelector('[data-list="faqs"]');
+        (get("sections.faqs.items") || []).forEach(function (f) {
+          var item = document.createElement("div");
+          item.className = "faq";
+          item.setAttribute("open-state", "false");
+          item.innerHTML =
+            '<button aria-expanded="false"><span class="q"></span><span class="icon">+</span></button>' +
+            '<div class="answer"><p></p></div>';
+          item.querySelector(".q").textContent = f.question;
+          item.querySelector(".answer p").textContent = f.answer;
+          var btn = item.querySelector("button");
+          var ans = item.querySelector(".answer");
+          btn.addEventListener("click", function () {
+            var open = item.getAttribute("open-state") === "true";
+            item.setAttribute("open-state", String(!open));
+            btn.setAttribute("aria-expanded", String(!open));
+            ans.style.maxHeight = open ? null : ans.scrollHeight + "px";
+          });
+          faqWrap.appendChild(item);
+        });
+
+        // 6) FAQPage JSON-LD — built from the same data, injected into <head>
+        var faqLd = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: (get("sections.faqs.items") || []).map(function (f) {
+            return {
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            };
+          }),
+        };
+        var ld = document.createElement("script");
+        ld.type = "application/ld+json";
+        ld.textContent = JSON.stringify(faqLd);
+        document.head.appendChild(ld);
+
+        // tiny niceties
+        var y = document.querySelector("[data-year]");
+        if (y) y.textContent = new Date().getFullYear();
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+# Copyright (C) 2025 Elsner
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: ACF Data Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/acf-import-export-manager\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-11T13:58:45+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: acf-data-manager\n"
+
+#. Plugin Name of the plugin
+#: acf-import-export-manager.php
+#: includes/admin-menu.php:24
+#: includes/admin-menu.php:25
+#: includes/admin-menu.php:46
+msgid "ACF Data Manager"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: acf-import-export-manager.php
+msgid "https://store.elsner.com/"
+msgstr ""
+
+#. Description of the plugin
+#: acf-import-export-manager.php
+msgid "Export and Import ACF field data page-wise, post-wise, and option-wise."
+msgstr ""
+
+#. Author of the plugin
+#: acf-import-export-manager.php
+msgid "Elsner"
+msgstr ""
+
+#. Author URI of the plugin
+#: acf-import-export-manager.php
+msgid "https://elsner.com/"
+msgstr ""
+
+#: acf-import-export-manager.php:86
+msgid "<strong>ACF Data Manager</strong> requires Advanced Custom Fields plugin to be installed and active."
+msgstr ""
+
+#: includes/admin-menu.php:41
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/admin-menu.php:49
+msgid "Export"
+msgstr ""
+
+#: includes/admin-menu.php:50
+msgid "Import"
+msgstr ""
+
+#: includes/admin-menu.php:54
+msgid "Export ACF Fields"
+msgstr ""
+
+#: includes/admin-menu.php:59
+msgid "Select Post Type:"
+msgstr ""
+
+#: includes/admin-menu.php:61
+#: includes/admin-menu.php:125
+msgid "Select Post Type"
+msgstr ""
+
+#: includes/admin-menu.php:71
+msgid "All Option Pages"
+msgstr ""
+
+#: includes/admin-menu.php:76
+msgid "Export Options:"
+msgstr ""
+
+#: includes/admin-menu.php:79
+msgid "All Posts"
+msgstr ""
+
+#: includes/admin-menu.php:83
+msgid "Single Post"
+msgstr ""
+
+#: includes/admin-menu.php:88
+msgid "Single Field Group"
+msgstr ""
+
+#: includes/admin-menu.php:94
+msgid "Export Format:"
+msgstr ""
+
+#: includes/admin-menu.php:98
+msgid "JSON"
+msgstr ""
+
+#: includes/admin-menu.php:102
+msgid "XML"
+msgstr ""
+
+#: includes/admin-menu.php:109
+msgid "Export Data"
+msgstr ""
+
+#: includes/admin-menu.php:115
+msgid "Import ACF Fields"
+msgstr ""
+
+#: includes/admin-menu.php:123
+msgid "Target Post Type:"
+msgstr ""
+
+#: includes/admin-menu.php:138
+msgid "Import File:"
+msgstr ""
+
+#: includes/admin-menu.php:143
+msgid "Allowed formats: JSON, XML. Maximum size: "
+msgstr ""
+
+#: includes/admin-menu.php:150
+msgid "Overwrite existing ACF fields with the same name?"
+msgstr ""
+
+#: includes/admin-menu.php:156
+msgid "Upload and Import"
+msgstr ""
+
+#: includes/admin-menu.php:161
+msgid "Processing file..."
+msgstr ""
+
+#: includes/admin-menu.php:165
+msgid "Import Mapping Required"
+msgstr ""
+
+#: includes/admin-menu.php:166
+msgid "The imported file contains multiple items. Please map them to existing posts or create new ones."
+msgstr ""
+
+#: includes/admin-menu.php:174
+msgid "Perform Import"
+msgstr ""
+
+#: includes/admin-menu.php:218
+msgid "Invalid file type. Please upload a JSON or XML file."
+msgstr ""
+
+#: includes/admin-menu.php:219
+msgid "File size exceeds maximum allowed limit."
+msgstr ""
+
+#: includes/admin-menu.php:220
+#: includes/import-functions.php:23
+msgid "Please select a file to import."
+msgstr ""
+
+#: includes/admin-menu.php:221
+msgid "Loading..."
+msgstr ""
+
+#: includes/admin-menu.php:222
+msgid "Select a Post"
+msgstr ""
+
+#: includes/admin-menu.php:223
+msgid "Select Field Group"
+msgstr ""
+
+#: includes/admin-menu.php:224
+msgid "No posts found."
+msgstr ""
+
+#: includes/admin-menu.php:225
+msgid "No field groups found."
+msgstr ""
+
+#: includes/admin-menu.php:226
+msgid "Field Group:"
+msgstr ""
+
+#: includes/admin-menu.php:227
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: includes/admin-menu.php:228
+msgid "Are you sure you want to perform the import with the current mappings? This action cannot be undone."
+msgstr ""
+
+#: includes/admin-menu.php:229
+msgid "Please select posttype"
+msgstr ""
+
+#: includes/export-functions.php:21
+#: includes/export-functions.php:160
+#: includes/export-functions.php:194
+#: includes/import-functions.php:19
+#: includes/import-functions.php:182
+msgid "You do not have sufficient permissions to perform this action."
+msgstr ""
+
+#: includes/export-functions.php:30
+msgid "Please select a post type to export."
+msgstr ""
+
+#: includes/export-functions.php:65
+msgid "Please select a post to export."
+msgstr ""
+
+#: includes/export-functions.php:77
+msgid "No fields found in the selected field group."
+msgstr ""
+
+#: includes/export-functions.php:94
+msgid "Please select a post and a field group to export."
+msgstr ""
+
+#: includes/export-functions.php:100
+msgid "Invalid export type selected."
+msgstr ""
+
+#: includes/export-functions.php:106
+msgid "No data found for the selected export options."
+msgstr ""
+
+#: includes/export-functions.php:135
+#, php-format
+msgid "Export failed: %s"
+msgstr ""
+
+#: includes/export-functions.php:165
+msgid "Post type parameter is required."
+msgstr ""
+
+#: includes/export-functions.php:199
+msgid "Post ID parameter is required."
+msgstr ""
+
+#: includes/import-functions.php:30
+msgid "Invalid file type. Please upload an XML or JSON file."
+msgstr ""
+
+#: includes/import-functions.php:35
+msgid "The uploaded file is empty."
+msgstr ""
+
+#: includes/import-functions.php:46
+msgid "Could not parse the imported file. Please check its format."
+msgstr ""
+
+#: includes/import-functions.php:94
+msgid "Proceeding with direct import."
+msgstr ""
+
+#: includes/import-functions.php:111
+msgid "Source Item (from file)"
+msgstr ""
+
+#: includes/import-functions.php:112
+msgid "Action"
+msgstr ""
+
+#: includes/import-functions.php:113
+msgid "Target Item (on this site)"
+msgstr ""
+
+#: includes/import-functions.php:146
+msgid "Please select"
+msgstr ""
+
+#: includes/import-functions.php:147
+msgid "Map to Existing"
+msgstr ""
+
+#: includes/import-functions.php:148
+msgid "Create New"
+msgstr ""
+
+#: includes/import-functions.php:149
+msgid "Skip"
+msgstr ""
+
+#: includes/import-functions.php:155
+msgid "Select Existing "
+msgstr ""
+
+#: includes/import-functions.php:164
+msgid "Enter New "
+msgstr ""
+
+#: includes/import-functions.php:193
+msgid "Invalid mapping data or imported file contents provided."
+msgstr ""
+
+#: includes/import-functions.php:210
+#, php-format
+msgid "Could not find ACF data for source %s (ID: %s). Skipping."
+msgstr ""
+
+#: includes/import-functions.php:222
+#, php-format
+msgid "Mapped target (ID: %d) is a %s, but source is a %s. Skipping import for source ID %s."
+msgstr ""
+
+#: includes/import-functions.php:226
+#, php-format
+msgid "Selected target %s (ID: %d) does not exist or is invalid. Skipping import for source ID %s."
+msgstr ""
+
+#: includes/import-functions.php:246
+#, php-format
+msgid "Failed to create new %s \"%s\": %s. Skipping import for source ID %s."
+msgstr ""
+
+#: includes/import-functions.php:250
+#, php-format
+msgid "New %s title cannot be empty for source ID %s. Skipping."
+msgstr ""
+
+#: includes/import-functions.php:257
+#, php-format
+msgid "Invalid action \"%s\" for source ID %s. Skipping."
+msgstr ""
+
+#: includes/import-functions.php:277
+#, php-format
+msgid "%d field imported successfully."
+msgid_plural "%d fields imported successfully."
+msgstr[0] ""
+msgstr[1] ""

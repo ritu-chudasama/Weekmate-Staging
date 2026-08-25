@@ -1,0 +1,1879 @@
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// Tools Page
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+.free_tools-listing {
+  margin: 50px 0;
+}
+
+.free_tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.free_tools-grid .free_tools-card {
+  width: 100%;
+  background: #E9F2FC;
+  max-width: calc(33.33% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 18px;
+}
+
+.free_tools-read-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.free_tools-read-more img {
+  margin-bottom: 3px;
+}
+
+.free_tools-grid .salary-calculator {
+  background-color: #E9FAF4;
+}
+
+.free_tools-grid .salary-slip-generator {
+  background-color: #EEEBFC;
+}
+
+.free_tools-grid .gratuity-calculator {
+  background-color: #FCF2E9;
+}
+
+.free-tools-grid .pf-and-esi-calculator {
+  background: #E9F2FC;
+}
+
+.free_tools-grid .invoice-generator {
+  background-color: #FCE9F2;
+}
+
+.free_tools-grid .invoice-generator .free_tools-thumb img {
+  max-width: 160px;
+  height: auto;
+  margin: 0;
+}
+
+.free_tools-grid .free_tools-thumb {
+  text-align: right;
+}
+
+.free_tools-grid .free_tools-read-more {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.free-tools-archive {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.free_tools-grid .free_tools-card-content {
+  padding: 32px 0 0;
+  max-width: 322px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.free_tools-grid .free_tools-card-title {
+  color: #0E2A48;
+  margin-bottom: 19px;
+}
+
+.free_tools-grid .free_tools-card-excerpt {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px !important;
+}
+
+.free_tools-card-content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tools-faq ul li:before {
+  content: none !important;
+}
+
+.tools-faq ul li {
+  padding-left: 0 !important;
+}
+
+.tools-faq {
+  font-family: "Manrope", sans-serif;
+}
+
+.tools-faq-title {
+  font-family: "Manrope", sans-serif;
+}
+
+.free__tools__title {
+  text-align: center;
+}
+
+.free-tools-toggle-remaining {
+  display: flex;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #005282;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.free-tools-toggle-remaining:hover {
+  transform: translateY(-2px);
+}
+
+.free-tools-toggle-remaining:active {
+  transform: translateY(0);
+}
+
+.tools-hero-title {
+  text-transform: none;
+}
+
+.tools-hero-main-title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.free-tools-quote {
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+
+.free-tools-hero-section {
+  padding: 2em 0;
+}
+
+.free_tools-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.free_tools-read-more .text {
+  position: relative;
+}
+
+.free_tools-read-more .text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+/* Apply underline on entire card hover */
+.free_tools-card:hover .free_tools-read-more .text::after {
+  width: 100%;
+}
+
+.free_tools-card {
+  transition: transform 0.3s ease;
+}
+
+/* Darken the image on card hover */
+.free_tools-card:hover .free_tools-thumb img {
+  filter: brightness(75%);
+  transition: filter 0.3s ease;
+}
+
+/* Arrow animation triggered by card hover */
+.free_tools-read-more .arrow img {
+  transition: transform 0.3s ease;
+}
+
+.free_tools-card:hover .free_tools-read-more .arrow img {
+  transform: rotate(-45deg);
+}
+
+.free-tools-main-title {
+  justify-content: center !important;
+}
+
+.freetools-hero-desc {
+  font-size: 20px;
+}
+
+
+@media (max-width:1200px) {
+  .free_tools-grid .free_tools-card {
+    max-width: calc(50% - 20px);
+  }
+
+  .free_tools-grid .free_tools-card-content {
+    padding: 26px 26px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .free_tools-grid .free_tools-card {
+    max-width: calc(100% - 181px);
+    margin: 20px auto;
+  }
+
+  .free_tools-grid .free_tools-card-excerpt {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .free_tools-grid .free_tools-thumb img {
+    max-width: 80px
+  }
+}
+
+@media (max-width:525px) {
+  .free_tools-grid .free_tools-card {
+    max-width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 375px) {
+  .free_tools-grid .free_tools-card {
+    max-width: calc(100% - 25px);
+    padding: 8px;
+  }
+}
+
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// Salary Calculator
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+
+:root {
+  --bg: #ffffff;
+
+  --card: #fafafa;
+
+  --text-primary: #1e232e;
+
+  --text-muted: #6b7280;
+
+  --accent1: rgb(13 110 253);
+
+  --accent2: #06b6d4;
+
+  --radius: 12px;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  --glass: rgba(255, 255, 255, 0.8);
+
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.salary {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.salary__card {
+  width: 100%;
+  max-width: 1200px;
+  background: #F4F4F4;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (max-width: 880px) {
+  .salary__card {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    padding: 20px;
+  }
+}
+
+.salary__header-title {
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: -0.2px;
+  color: var(--text-primary);
+}
+
+.salary__header-desc {
+  margin: 6px 0 18px;
+  color: var(--text-muted);
+  font-size: 20px;
+}
+
+.salary__form {
+  padding-right: 4px;
+}
+
+.salary__field {
+  background: var(--glass);
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.salary__field-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.salary__label-name {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.salary__label-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.salary__input,
+.salary__input[type="text"],
+.salary__input[type="number"],
+.salary__readonly {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.salary__readonly {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.salary__row {
+  display: flex;
+  gap: 12px;
+}
+
+.salary__col {
+  flex: 1;
+}
+
+.salary__slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.salary__range {
+  flex: 1;
+  height: 28px;
+}
+
+.salary__chip {
+  min-width: 68px;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--glass);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.salary__result-card {
+  background: #ffffff;
+  /* card inside right section */
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.salary__big-num {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.salary__muted {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.salary__aside {
+  padding-left: 6px;
+  width: 100%;
+}
+
+.salary__stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
+}
+
+.salary__stat:last-child {
+  border-bottom: 0;
+}
+
+.salary__stat-sub {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.salary__pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 600;
+  color: #000;
+}
+
+.salary__footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.salary__btn {
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #005282;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.salary__btn:hover {
+  background: #00bdf2;
+  ;
+}
+
+.salary__mini {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.salary__muted-2 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.salary__note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  font-weight: 600
+}
+
+.error-msg {
+  color: #c62828;
+  font-weight: 500;
+  margin-top: 3px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-error {
+  border-color: #c62828 !important;
+}
+
+.input-error:focus {
+  border-color: #c62828 !important;
+  box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.3) !important;
+  outline: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// HRA Calculator
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+.hra-calculator {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #F4F4F4;
+}
+
+/* --- Card Block --- */
+.hra-calculator__card {
+
+  padding: 30px;
+  width: 100%;
+  border: none;
+}
+
+.hra-calculator__card:not(.hra-calculator__card--results) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+.hra-calculator__title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* --- Form Structure --- */
+.hra-calculator__row {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 520px) {
+  .hra-calculator__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hra-calculator__label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #475569;
+}
+
+.hra-calculator__input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #ffffff;
+}
+
+.hra-calculator__input:focus {
+  border-color: #005282;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* --- City Toggle (Radio Buttons) --- */
+.hra-city-toggle {
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.hra-city-toggle .option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.hra-city-toggle input[type="radio"] {
+  accent-color: #3b82f6;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* --- Buttons --- */
+.hra-calculator__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.button {
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  flex: 1;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.button--ghost {
+  background: #005282;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.button--ghost:hover {
+  background: #00bdf2;
+  ;
+}
+
+/* --- Results --- */
+.hra-results {
+  display: grid;
+  gap: 8px;
+}
+
+.hra-results__item {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #eef2ff;
+  background: #f8faff;
+  font-size: 15px;
+}
+
+
+
+
+.hra-results__value {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hra-calculator__note {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #64748b;
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// Gradutity Calculator
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+
+.gra-calculator {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #F4F4F4;
+
+}
+
+.gra-calculator .button.button--ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+  background: #005282;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  z-index: 1;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  min-height: 54px;
+}
+
+.gra-calculator .button.button--ghost:hover {
+  background: #00bdf2;
+  color: #fff;
+  border: 1px solid #00bdf2;
+}
+
+/* --- Card Block --- */
+.gra-calculator__card {
+  padding: 30px;
+  width: 100%;
+}
+
+.gra-calculator__card:not(.gra-calculator__card--results) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.gra-calculator__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.gra-calculator__desc {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 20px;
+}
+
+/* --- Form Structure --- */
+.gra-calculator__row {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 520px) {
+  .gra-calculator__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gra-calculator__label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #475569;
+}
+
+.gra-calculator__input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.gra-calculator__input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* --- Radio Button Field --- */
+.gra-checkbox-field {
+  grid-column: 1 / -1;
+  /* spans full width */
+}
+
+.gra-city-toggle {
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.gra-city-toggle .option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.gra-city-toggle input[type="radio"] {
+  accent-color: #3b82f6;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.gra-calculator__results-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 15px;
+  color: #005282;
+}
+
+.gra-results {
+  display: grid;
+  gap: 12px;
+}
+
+.gra-results__item {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #eef2ff;
+  background: #ffffff;
+  font-size: 16px;
+}
+
+.gra-results__item--highlight {
+  background: #ffffff;
+  border: 2px solid #005282;
+  font-weight: 600;
+  color: #005282;
+}
+
+.gra-results__value {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.gra-results__value--highlight {
+  font-size: 22px;
+  color: #005282;
+}
+
+/* --- Buttons (reusing HRA/General styles) --- */
+.gra-calculator__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+  max-width: 300px;
+}
+
+.gra-calculator__note {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #64748b;
+}
+
+
+
+
+
+
+
+
+
+
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// PF and ESI Calculator
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+
+.pf-esi {
+  max-width: 760px;
+  padding: 2rem;
+  background: #F9F9F9;
+  border-radius: 12px;
+  color: #0f172a;
+}
+
+.pf-esi__title {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: left;
+}
+
+.pf-esi__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pf-esi__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .pf-esi__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pf-esi__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pf-esi__field--read-only .pf-esi__input {
+  background-color: #f9fafb;
+  cursor: default;
+}
+
+.pf-esi__label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.pf-esi__input {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pf-esi__input::placeholder {
+  color: #9ca3af;
+}
+
+.pf-esi__input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+  background-color: #f9fbff;
+}
+
+.pf-esi__input--read-only {
+  color: #4b5563;
+}
+
+.pf-esi__input:invalid:required:not(:placeholder-shown) {
+  border-color: #dc2626;
+}
+
+.pf-esi__error {
+  min-height: 1em;
+  font-size: 0.78rem;
+  color: #dc2626;
+}
+
+.pf-esi__section-title {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+}
+
+.pf-esi__button {
+  align-self: flex-start;
+  padding: 0.65rem 1.5rem;
+  background: #005282;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  box-shadow: 0 10px 18px rgba(37, 99, 235, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.pf-esi__button:hover {
+  transform: translateY(-1px);
+  background: #00bdf2;
+}
+
+.pf-esi__button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(30, 64, 175, 0.4);
+}
+
+.pf-esi__results {
+  margin-top: 1rem;
+  padding: 1rem 1rem 0.75rem;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1.5rem;
+}
+
+.pf-esi__result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.pf-esi__result-item--highlight {
+  font-weight: 600;
+  color: #111827;
+  border-top: 1px dashed #d1d5db;
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.pf-esi__result-label {
+  margin-right: 0.5rem;
+}
+
+.pf-esi__result-value {
+  font-weight: 600;
+  color: #111827;
+}
+
+
+
+
+
+
+
+
+
+
+/* // ===============================
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// Salary Slip Generator
+// ===============================
+// ===============================
+// ===============================
+// ===============================
+// =============================== */
+
+.payslip {
+  max-width: 860px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  background: #F9F9F9;
+  border: 1px solid #e4e8f0;
+  border-radius: 16px;
+}
+
+/* =========================
+   HEADERS & TITLES
+========================= */
+
+.payslip__upload {
+  width: 160px;
+  font-family: "Inter", sans-serif;
+  height: 90px;
+  border: 1px dashed #DBE8FD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0E2A48;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.payslip__title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1c1d22;
+}
+
+.payslip__month {
+  text-align: right;
+}
+
+.payslip__month-label {
+  font-size: 12px;
+  color: #5d626b;
+}
+
+.payslip__month-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #09244b;
+}
+
+/* =========================
+   LAYOUT SECTIONS
+========================= */
+
+.payslip__row--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.payslip__section {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  border: 1px solid #eef1f6;
+}
+
+/* =========================
+   UPLOAD BOX
+========================= */
+
+.payslip__upload {
+  border: 2px dashed #cfd3df;
+  border-radius: 12px;
+
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: border-color 0.2s ease;
+}
+
+.payslip__upload:hover {
+  border-color: #6a5cff;
+}
+
+.payslip__upload-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e365a;
+}
+
+.payslip__upload-note {
+  font-size: 11px;
+  color: #788094;
+}
+
+.payslip__upload-preview {
+  max-width: 100px;
+  margin: auto;
+}
+
+.payslip__row--header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.payslip__input,
+.payslip__table-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed #ccd2e0;
+  padding: 6px 0;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.payslip__input:focus,
+.payslip__table-input:focus {
+  border-bottom: 1px solid #4f46e5;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+
+.payslip__grid {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.payslip__grid>div label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  display: block;
+  color: #5d626b;
+}
+
+/* =========================
+   TABLES (Earnings / Deductions)
+========================= */
+
+.payslip__table-wrap {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.payslip__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.payslip__table th {
+  text-align: left;
+  font-size: 14px;
+  background: #f3f6fb;
+  padding: 10px;
+  font-weight: 600;
+  color: #1c1d22;
+}
+
+.payslip__table td {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #eef1f6;
+  color: #2b2f36;
+}
+
+.payslip__row-total td {
+  background: #fbfcff;
+  font-weight: 600;
+}
+
+/* =========================
+   SUMMARY SECTION
+========================= */
+
+.payslip__summary {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f9ff;
+  border: 1px solid #dce3f1;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.payslip__summary-left {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.payslip__summary-note {
+  font-size: 12px;
+  color: #6f7684;
+}
+
+.payslip__summary-right {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================
+   AMOUNT IN WORDS
+========================= */
+
+.payslip__words {
+  text-align: right;
+  font-size: 13px;
+  color: #394150;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.payslip__actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.payslip__btn {
+  padding: 11px 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.payslip__btn--primary {
+  color: white;
+}
+
+.payslip__btn--ghost {
+  border: 1px solid #ddd;
+  background: white;
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+  border-radius: 30px;
+  z-index: 1;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  min-height: 54px;
+}
+
+/* =========================
+   POPUP (Download Options)
+========================= */
+
+.payslip__popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payslip__popup-box {
+  width: 360px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.payslip__popup-title {
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+.payslip__popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.payslip__popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.payslip__button--pdf {
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.payslip__button--excel {
+  background: #0f9d58;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- POPUP ---------- */
+.payslip-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.payslip-popup__box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.payslip-popup__title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.payslip-popup__close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.payslip-popup__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+
+
+.payslip__button--pdf {
+
+  color: #fff;
+}
+
+.payslip__button--excel {
+  background: #06A14B;
+  color: white;
+}
+
+/* ---------- PRINT MODE ---------- */
+
+/* Prevent full page printing */
+@media print {
+
+  /* Hide everything outside print container, but keep space logic intact */
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* Make print container and its children visible */
+  #payslip-print,
+  #payslip-print * {
+    visibility: visible !important;
+  }
+
+  /* Force only non-print elements to collapse height - NOT the print container */
+  body>*:not(#payslip-print) {
+    height: 0 !important;
+  }
+
+  /* Ensure correct print format */
+  #payslip-print {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190mm;
+    padding: 25px;
+    background: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  /* Make table avoid page split */
+  #payslip-print table {
+    page-break-inside: avoid !important;
+  }
+
+  /* Fix image visibility */
+  #payslip-print img {
+    display: block !important;
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  /* Hide UI buttons from print */
+  .no-print,
+  .payslip__actions {
+    display: none !important;
+  }
+}
+
+.payslip-input-error {
+  display: block;
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.payslip-field-required {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* ===============================
+   Invoice Generator Paper UI
+   =============================== */
+.invoice-generator-wrapper {
+  background: #f3f4f6;
+  padding: 40px 20px;
+  font-family: 'Inter', 'Manrope', sans-serif;
+  color: #111827;
+}
+
+.invoice-paper {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.inv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.inv-logo-box {
+  width: 150px;
+}
+
+.inv-logo-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 80px;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 4px;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.inv-logo-label:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.inv-input-h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #111827;
+  border: 1px solid transparent;
+  background: transparent;
+  text-align: right;
+  width: 100%;
+  outline: none;
+  padding: 5px;
+  transition: border-color 0.2s;
+}
+
+.inv-input-h1:hover,
+.inv-input-h1:focus {
+  border-color: #e5e7eb;
+}
+
+.inv-col-half {
+  width: 48%;
+}
+
+.inv-input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  color: #374151;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+
+.inv-input:hover,
+.inv-input:focus {
+  border-color: #e5e7eb;
+  background: #f9fafb;
+}
+
+.inv-input-bold {
+  font-weight: 700;
+  color: #111827;
+}
+
+.inv-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.inv-meta-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.inv-meta-row .inv-label {
+  margin-bottom: 0;
+  margin-right: 15px;
+  width: 100px;
+  text-align: right;
+}
+
+.inv-meta-row .meta-input {
+  width: 130px;
+  margin-bottom: 0;
+}
+
+.inv-items-wrapper {
+  margin-top: 40px;
+}
+
+.inv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inv-table-header th {
+  background: #111827;
+  color: #fff;
+  padding: 10px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.inv-table td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.inv-add-btn {
+  margin-top: 15px;
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.inv-add-btn:hover {
+  text-decoration: underline;
+}
+
+.inv-textarea {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid transparent;
+  background: transparent;
+  resize: vertical;
+  padding: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #374151;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+
+.inv-textarea:hover,
+.inv-textarea:focus {
+  border-color: #e5e7eb;
+  background: #f9fafb;
+}
+
+.inv-totals-box {
+  width: 100%;
+}
+
+.inv-total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.inv-total-grand {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 5px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #111827;
+  background: #f9fafb;
+  border-radius: 4px;
+}
+
+.inv-btn-del {
+  color: #ef4444;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.inv-actions {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.inv-download-btn {
+  background: #005282;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.inv-download-btn:hover {
+  background: #004066;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Responsive adjustments for Invoice Generator */
+@media (max-width: 768px) {
+  .invoice-paper {
+    padding: 20px;
+  }
+
+  .inv-row {
+    flex-direction: column;
+  }
+
+  .inv-col-half {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .inv-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inv-logo-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inv-input-h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .inv-meta-row {
+    justify-content: flex-start;
+  }
+
+  .inv-meta-row .inv-label {
+    text-align: left;
+    width: 120px;
+  }
+
+  .inv-meta-row .meta-input {
+    text-align: left !important;
+  }
+
+  .inv-items-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+  }
+
+  .inv-table {
+    min-width: 650px;
+  }
+
+  .inv-settings-bar {
+    justify-content: center !important;
+  }
+}
+
+@media print {
+  .invoice-paper.payslip {
+    background: #fff !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .payslip__section {
+    border: none !important;
+    padding: 0 0 20px 0 !important;
+  }
+}

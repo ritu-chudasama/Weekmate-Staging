@@ -1,0 +1,38 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /settings/
+Disallow: /billing/
+Disallow: /api/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /reset-password/
+Disallow: /*?ref=*
+Disallow: /*?utm_*
+Disallow: /thank-you/
+Disallow: /privacy-policy/print/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+Crawl-delay: 5
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /billing/
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /billing/
+Disallow: /api/
+
+Disallow: /*?sessionid=
+Disallow: /*?tracking=
+
+Sitemap: https://weekmate.in/sitemap_index.xml
+
+

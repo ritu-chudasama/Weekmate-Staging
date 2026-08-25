@@ -1,0 +1,11 @@
+.aboutus-banner-section.advtool-sec {
+    border-color: #E6E6E6;
+    background: transparent;
+}
+.aboutus-banner-section .about-conetnt {
+    width: 100%;
+}
+
+.aboutus-banner-section .img-fluid {
+    border-radius: 20px;
+}

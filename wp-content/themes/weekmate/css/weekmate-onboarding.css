@@ -1,0 +1,743 @@
+/**
+ * Onboarding Page Template Styles
+ * BEM Methodology: Block__Element--Modifier
+ * Direct values (no CSS custom properties)
+ */
+
+/* ============================================================================
+   Main Page Wrapper
+   ========================================================================== */
+
+.onboarding-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================================================================
+   Hero Section
+   ========================================================================== */
+
+.onboarding-hero {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.onboarding-hero__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.onboarding-hero__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.onboarding-hero__text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.onboarding-hero__title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+  font-family: 'Manrope';
+}
+
+.onboarding-hero__subtitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: #383838;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  font-family: 'Manrope';
+}
+
+.onboarding-hero__description {
+  font-size: 1.125rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.onboarding-hero__description p {
+  margin: 0 0 1rem 0;
+}
+
+.onboarding-hero__description p:last-child {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.onboarding-hero__image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding-hero__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================================
+   Journey Section
+   ========================================================================== */
+
+.onboarding-journey {
+  padding: 35px 0;
+}
+
+.onboarding-journey__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.onboarding-journey__title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  text-align: center;
+  color: #383838;
+  margin-bottom: 55px;
+}
+
+.onboarding-journey__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+/* Journey Step */
+.onboarding-journey__step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.onboarding-journey__step--reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+.onboarding-journey__step-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.onboarding-journey__step-number-wrapper {
+  margin-bottom: 2rem;
+}
+
+.onboarding-journey__step-number {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 45px;
+  line-height: 100%;
+  text-align: center;
+  padding: 20px 37px 43px;
+  color: #005282;
+  background-repeat: no-repeat;      
+  background-position: center;       
+  background-size: contain; 
+}
+
+.onboarding-journey__step-text {
+  flex: 1;
+  padding: 18px 0 18px 18px;
+}
+
+.onboarding-journey__step-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #383838;
+}
+
+.onboarding-journey__step-description {
+  font-size: 1.125rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.onboarding-journey__step-description p {
+  margin: 0 0 1rem 0;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.onboarding-journey__step-description p:last-child {
+  margin-bottom: 0;
+}
+
+.onboarding-journey__step-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding-journey__step-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================================================
+   CTA Section
+   ========================================================================== */
+
+.onboarding-cta {
+  padding: 50px;
+  background-color: #1e4d8b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 1400px;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+
+.onboarding-cta__overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.onboarding-cta__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.onboarding-cta__content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.onboarding-cta__text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.onboarding-cta__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+}
+
+.onboarding-cta__description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.onboarding-cta__description p {
+  margin: 0 0 1rem 0;
+}
+
+.onboarding-cta__description p:last-child {
+  margin-bottom: 0;
+}
+
+.onboarding-cta__buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.onboarding-cta__button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+
+.onboarding-cta__button--primary {
+  background-color: #ffffff;
+  color: #1e4d8b;
+}
+
+.onboarding-cta__button--primary:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.onboarding-cta__button--secondary {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.onboarding-cta__button--secondary:hover {
+  background-color: #ffffff;
+  color: #1e4d8b;
+}
+
+.onboarding-cta__image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding-cta__img {
+  max-width: 262px;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.onboarding-journey__step-number-wrapper-title-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 1. Create the Grid Container */
+.onboarding-journey__step-number-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    column-gap: 20px; 
+    align-items: start;
+}
+
+
+.onboarding-journey__step-number-wrapper-title-container {
+    display: contents; 
+}
+
+.onboarding-journey__step-number {
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+.onboarding-journey__step-title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center; 
+    margin-bottom: 0;   
+}
+
+
+.onboarding-journey__step-text {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0; 
+    margin-top: 10px; 
+}
+
+
+
+/* ============================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Large Desktop (1440px and above) */
+@media (max-width: 1440px) {
+ .onboarding-cta{
+    margin: 80px 10px;
+ }
+}
+
+
+@media (max-width: 1439px) {
+  .onboarding-cta__title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1310px){
+  .onboarding-cta__button{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .onboarding-hero {
+    padding: 3.5rem 0;
+  }
+  
+  .onboarding-hero__content {
+    gap: 3rem;
+  }
+  
+  .onboarding-journey__steps {
+    gap: 3.5rem;
+  }
+  
+  .onboarding-journey__step {
+    gap: 3rem;
+  }
+  
+  .onboarding-journey__step:not(:last-child)::after {
+    bottom: -3.5rem;
+    height: 3.5rem;
+  }
+  
+  .onboarding-cta__content {
+    gap: 3rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .onboarding-journey__step-number{
+        font-size: 30px;
+        padding: 13px 20px 25px;
+  }
+
+  .onboarding-hero {
+    padding: 4rem 0;
+  }
+  
+  .onboarding-hero__content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .onboarding-journey {
+    padding: 1rem 0;
+  }
+  
+  .onboarding-journey__title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .onboarding-journey__steps {
+    gap: 4rem;
+  }
+  
+  .onboarding-journey__step {
+    gap: 3rem;
+  }
+  
+  .onboarding-journey__step:not(:last-child)::after {
+    bottom: -3rem;
+    height: 3rem;
+  }
+  
+  .onboarding-cta {
+    padding: 2rem 0;
+    margin: 10px;
+  }
+
+  .onboarding-cta__img {
+    max-width: 150px;
+  }
+  
+  .onboarding-cta__title {
+    font-size: 1.75rem;
+  }
+  
+  .onboarding-cta__content {
+    gap: 3rem;
+  }
+
+  .onboarding-journey__step,
+  .onboarding-journey__step--reverse {
+    flex-direction: column;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .onboarding-journey__step-number-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .onboarding-cta__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .onboarding-cta__buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) {
+
+  
+  .onboarding-journey__step-text{
+    padding: 0;
+  }
+
+  .onboarding-hero {
+    padding: 2.5rem 0;
+  }
+  
+  .onboarding-hero__content {
+    
+    gap: 3rem;
+  }
+  
+  .onboarding-hero__text,
+  .onboarding-hero__image {
+    min-width: 100%;
+  }
+  
+  .onboarding-hero__description {
+    font-size: 1rem;
+  }
+  
+  .onboarding-journey {
+    padding: 2rem 0;
+  }
+  
+  .onboarding-journey__title {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+  
+  .onboarding-journey__steps {
+    gap: 2rem;
+  }
+  .onboarding-journey__step-text {
+        grid-column: 1 / -1; 
+        grid-row: 2;         
+        padding: 0;
+        margin-top: 15px;    
+    }
+  
+  
+  
+  /* Hide dashed lines on mobile */
+  .onboarding-journey__step:not(:last-child)::after {
+    display: none;
+  }
+  
+  .onboarding-journey__step-content,
+  .onboarding-journey__step-image {
+    min-width: 100%;
+  }
+  
+  .onboarding-journey__step-title{
+    margin: 0;
+  }
+
+  .onboarding-journey__step-number{
+    top: -2%;
+  }
+  
+  .onboarding-journey__step-description {
+    font-size: 1rem;
+  }
+  
+  .onboarding-cta {
+    padding: 2rem 0;
+  }
+  
+  .onboarding-cta__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .onboarding-cta__description {
+    font-size: 1rem;
+  }
+  
+  
+  
+  .onboarding-cta__text,
+  .onboarding-cta__image {
+    min-width: 100%;
+  }
+  
+  
+  
+  .onboarding-cta__button {
+    width: 100%;
+  }
+
+  .onboarding-journey__step-description p{
+    padding: 0 15px;
+  }
+
+  .onboarding-hero__description p:last-child{
+    font-size: 15px;
+  }
+}
+
+/* Mobile Medium (481px - 575px) */
+@media (max-width: 575px) {
+  .onboarding-hero__container,
+  .onboarding-journey__container,
+  .onboarding-cta__container {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile Small (320px - 480px) */
+@media (max-width: 480px) {
+
+  .onboarding-journey__step-number-wrapper{
+    gap: 5px;
+  }
+
+  .onboarding-hero {
+    padding: 1.5rem 0 3rem 0;
+  }
+  
+  .onboarding-hero__title {
+    font-size: 29px;
+    margin-bottom: 10px;
+  }
+  .onboarding-hero__subtitle {
+    font-size: 20px;
+  }
+  
+  .onboarding-journey {
+    padding: 3rem 0;
+  }
+  
+  .onboarding-journey__title {
+    font-size: 29px;
+  }
+  
+  .onboarding-journey__steps {
+    gap: 2rem;
+  }
+  
+  .onboarding-journey__step-number {
+    font-size: 17px;
+   }
+
+   .onboarding-journey__step-number {
+        top: -1.2%;
+        left: -6%;
+        padding: 12px;
+    }
+
+    .onboarding-journey__step-description p{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+  
+  .onboarding-journey__step-title {
+    font-size: 1.125rem;
+  }
+  
+  .onboarding-cta {
+    padding: 3rem 0;
+  }
+  
+  .onboarding-cta__title {
+    font-size: 1.375rem;
+  }
+  
+  .onboarding-cta__button {
+    padding: 12px 30px;
+    font-size: 0.875rem;
+  }
+
+  .onboarding-journey__step-number-wrapper-title-container{
+    gap: 5px;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .onboarding-hero__title {
+    font-size: 1.25rem;
+  }
+  
+  .onboarding-journey__title {
+    font-size: 1.125rem;
+  }
+  
+  .onboarding-journey__step-number {
+    font-size: 2.5rem;
+  }
+  
+  .onboarding-cta__title {
+    font-size: 1.125rem;
+  }
+}
+
+/* ============================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  .onboarding-page {
+    background: white;
+  }
+  
+  .onboarding-cta__overlay {
+    background-color: transparent;
+  }
+  
+  .onboarding-cta__button {
+    border: 1px solid #000;
+    color: #000;
+  }
+}
+
+/* ============================================================================
+   Accessibility Enhancements
+   ========================================================================== */
+
+/* Focus styles */
+.onboarding-cta__button:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .onboarding-hero__title,
+  .onboarding-journey__title,
+  .onboarding-journey__step-title {
+    font-weight: 900;
+  }
+  
+  .onboarding-cta__button {
+    border-width: 3px;
+  }
+}

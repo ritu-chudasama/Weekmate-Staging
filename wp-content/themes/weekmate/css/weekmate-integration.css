@@ -1,0 +1,374 @@
+/* ═══════════════════════════════════════════════
+   INTEGRATION PAGE — CLEAN CSS
+═══════════════════════════════════════════════ */
+
+/* ── HERO ───────────────────────────────────── */
+.intg-hero {
+    background: linear-gradient(156.19deg, #0173A4 56.3%, #005282 165.52%);
+    padding: 53px 0;
+    overflow: hidden;
+}
+
+.intg-hero__content {
+    color: #fff;
+}
+
+.intg-hero__label {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.intg-hero__heading {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.intg-hero__heading-highlight {
+    color: #47CFF5;
+}
+
+.intg-hero__desc {
+    font-size: 16px;
+    color: #EBEBEB;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.intg-hero__btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.intg-hero__btn:hover {
+    background: #fff;
+    color: #538AAB;
+}
+
+.intg-hero__image img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ── FEATURE ───────────────────────────────── */
+.intg-feature {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.intg-feature__card {
+    background: #E8F7FF;
+    border-radius: 16px;
+    padding: 55px 64px;
+    margin: 0 56px;
+}
+
+.intg-feature__heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.intg-feature__heading-highlight {
+    color: #0173A4;
+    display: block;
+}
+
+.intg-feature__desc {
+    font-size: 15px;
+    color: #828282;
+}
+
+.intg-feature__image img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ── LISTING ───────────────────────────────── */
+.intg-listing {
+    padding: 90px 0 96px;
+    background: linear-gradient(177.96deg, #F9FDFF 1.72%, rgba(249, 253, 255, 0) 113.5%);
+
+}
+
+.intg-listing__header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.intg-listing__heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.intg-listing__sub-heading {
+    font-size: 16px;
+    color: #6B7280;
+    line-height: 1.7;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+/* ── SEARCH ───────────────────────────────── */
+.intg-listing__search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.intg-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 10px 20px;
+    max-width: 560px;
+    width: 100%;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.intg-search:focus-within {
+    border-color: #1b6ca8;
+}
+
+.intg-search__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.intg-search__input::placeholder {
+    color: #aaa;
+}
+
+.intg-search__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ── CATEGORY ─────────────────────────────── */
+.intg-category {
+    margin-bottom: 70px;
+}
+
+.intg-category:last-of-type {
+    margin-bottom: 0;
+}
+
+.intg-category__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.intg-category__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.intg-category__grid.intg-category__grid--communication-integrations {
+    gap: 75px;
+}
+
+/* ── CARD ─────────────────────────────────── */
+.intg-card {
+    border: 1.2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 25px;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+
+.intg-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-color: #d0dce8;
+}
+
+.intg-card__icon {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 20px;
+}
+
+.intg-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.intg-card__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #1A1A2E;
+}
+
+.intg-card__tag {
+    font-size: 16px;
+    color: #6B7280;
+}
+
+/* ── UTILITIES ───────────────────────────── */
+.intg-card--hidden {
+    display: none;
+}
+
+.intg-category--hidden {
+    display: none;
+}
+
+.intg-listing__no-results {
+    text-align: center;
+    color: #888;
+    padding: 40px 0;
+}
+
+.intg-category__grid.intg-category__grid--project-management-integrations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* ── RESPONSIVE ─────────────────────────── */
+@media (max-width: 1199px) {
+    .intg-category__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .intg-hero {
+        padding: 60px 0;
+    }
+
+    .intg-category__grid.intg-category__grid--project-management-integrations {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .intg-hero__heading {
+        font-size: 32px;
+    }
+
+
+    .intg-feature__card {
+        padding: 32px;
+        margin: 0;
+    }
+
+    .intg-listing__heading,
+    .intg-feature__heading {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .intg-feature__image {
+        margin-top: 32px;
+    }
+
+    .intg-category__grid.intg-category__grid--communication-integrations,
+    .intg-category__grid.intg-category__grid--project-management-integrations,
+    .intg-category__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .intg-listing {
+        padding: 60px 0;
+    }
+
+    .intg-hero .column-reverse {
+        flex-direction: column-reverse ;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .intg-listing__heading,
+    .intg-feature__heading {
+        font-size: 24px;
+        line-height: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .intg-hero__heading {
+        font-size: 26px;
+    }
+
+    .intg-category__grid.intg-category__grid--communication-integrations,
+    .intg-category__grid.intg-category__grid--project-management-integrations,
+    .intg-category__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .intg-feature__desc {
+        text-align: center;
+    }
+
+    .intg-card {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .intg-card .intg-card__icon {
+        margin: 0 auto 20px auto;
+    }
+
+    .intg-category__title {
+        margin-bottom: 26px;
+    }
+
+    .intg-card__name {
+        font-size: 18px;
+    }
+
+    .intg-category {
+        margin-bottom: 60px;
+    }
+
+    .intg-hero__content {
+        color: #fff;
+        text-align: center;
+    }
+
+    .intg-listing__search {
+        margin-bottom: 60px;
+    }
+
+    .intg-card__tag {
+        font-size: 14px;
+    }
+
+    .intg-card {
+        padding: 16px 12px;
+    }
+
+    .intg-listing__heading {
+        font-size: 22px;
+    }
+}

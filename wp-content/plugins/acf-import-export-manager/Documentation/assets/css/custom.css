@@ -1,0 +1,35 @@
+/*
+ * 
+ Custom css
+Author: Elsner Technologies Pvt. Ltd.
+ */
+
+
+#documenter_content {
+    padding-top: 90px;
+}
+#documenter-cover {
+    min-height: 380px;
+}
+.marketing-byline {
+    color: #607D8B;
+}
+.marketing-byline li {
+    display: block;
+    padding: 0 2px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+section {
+    padding-top: 50px;
+    margin-top: 0 !important;
+}
+section h3 {
+    font-size: 2em;
+    color: #ff9012;
+    font-weight: 900;
+}
+
+section h3 {
+    margin-top: 0 !important;
+}
